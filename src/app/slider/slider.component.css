@@ -1,0 +1,9 @@
+.swiperContainer{
+    min-width: 0;
+}
+::ng-deep .cardsSlider .swiper-slide {
+    width: fit-content !important;
+}
+::ng-deep .cardsSlider .swiper-slide .card {
+    width: 928px;
+}

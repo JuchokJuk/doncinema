@@ -1,0 +1,18 @@
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--main-color) var(--noise);
+    z-index: 9999;
+}
+
+.logo {
+    margin: 16px;
+}
+
+.button {
+    padding: 16px;
+}
+svg{
+    fill: var(--main-contrast-color);
+}

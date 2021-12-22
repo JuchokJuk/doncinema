@@ -1,0 +1,19 @@
+.menuMargin {
+    margin-top: 72px;
+}
+
+.header {
+    position: relative;
+    padding: 32px;
+    padding-top: 112px;
+    gap: 32px;
+    width: 100%;
+}
+
+.graphics {
+    padding: 32px;
+    align-items: center;
+}
+svg{
+    fill: var(--main-contrast-color);
+}
