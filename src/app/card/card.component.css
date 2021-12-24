@@ -6,7 +6,9 @@
     gap: 64px;
     padding: 32px;
 }
-
+.firstHalf{
+    gap: 16px;
+}
 .image {
     flex-shrink: 0;
     width: 50%;
@@ -17,9 +19,35 @@ img{
     object-fit: cover;
     display: block;
 
-    z-index:-1;
+    /* z-index:-1; */
     position: relative;
 }
-.firstHalf{
-    gap: 16px;
-}
+
+
+
+
+  .image {
+    background-color:    var(--base);
+    position:            relative;
+  }
+  
+  .image img {
+    filter:              grayscale(100%) contrast(1) blur(var(--blur));
+    mix-blend-mode:      var(--bg-blend);
+    opacity:             var(--opacity);
+    position:            relative;
+  }
+  
+  .image::before {
+    background-color:    var(--foreground);
+    bottom:              0;
+    content:             '';
+    height:              100%;
+    left:                0;
+    mix-blend-mode:      var(--fg-blend);
+    position:            absolute;
+    right:               0;
+    top:                 0;
+    width:               100%;
+    z-index:             1;
+  }

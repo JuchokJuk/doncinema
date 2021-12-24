@@ -24,14 +24,24 @@
 
 
 :root {
-    --main-color: #EAEAEA;
+    --main-color: #E2E2E2;
     --noise: url(./assets/blackNoise.png);
-    --main-contrast-color: #252525;
-    --main-low-contrast-color: #252525;
-    --accent-color: #f58282;
-    --accent-coplementary-color: #e882f5;
-}
+    --main-contrast-color: #000000;
+    --main-medium-contrast-color: #252525;
+    --main-low-contrast-color: #25252540;
+    --accent-color: #CE9496;
+    --accent-coplementary-color: #9972A0;
 
+
+    /* duotone */
+    --base:              #CE9496;
+    --bg-blend:          multiply;
+    --blur:              0px;
+    --fg-blend:          lighten;
+    --foreground:        #4d005a;
+    --opacity:           1;
+    --spacing:           1%;
+  }
 html, body {
     width: 100%;
     height: 100%;
@@ -84,7 +94,7 @@ h4 {
 
 
 .border {
-    box-shadow: 0px 0px 0px 0.5px var(--main-low-contrast-color), 0px 0px 0px 0.5px var(--main-low-contrast-color) inset;
+    box-shadow: 0px 0px 0px 0.5px var(--main-medium-contrast-color), 0px 0px 0px 0.5px var(--main-medium-contrast-color) inset;
 }
 
 
