@@ -3,15 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { SwiperModule } from 'swiper/angular';
-import { MenuComponent } from './menu/menu.component';
-import { HeaderComponent } from './header/header.component';
-import { CardComponent } from './card/card.component';
-import { OrbsComponent } from './orbs/orbs.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { HeadlineComponent } from './headline/headline.component';
-import { TabsComponent } from './tabs/tabs.component';
-import { SliderComponent } from './slider/slider.component';
-import { DiagonalComponent } from './diagonal/diagonal.component';
+import { MenuComponent } from './ui/menu/menu.component';
+import { HeaderComponent } from './ui/header/header.component';
+import { CardComponent } from './ui/card/card.component';
+import { OrbsComponent } from './ui/orbs/orbs.component';
+import { ProjectsComponent } from './ui/projects/projects.component';
+import { HeadlineComponent } from './ui/headline/headline.component';
+import { TabsComponent } from './ui/tabs/tabs.component';
+import { SliderComponent } from './ui/slider/slider.component';
+import { DiagonalComponent } from './ui/diagonal/diagonal.component';
 
 
 @NgModule({
