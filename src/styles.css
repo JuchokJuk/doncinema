@@ -29,17 +29,21 @@
     --main-contrast-color: #000000;
     --main-medium-contrast-color: #252525;
     --main-low-contrast-color: #25252540;
+
     --accent-color: #CE9496;
     --accent-coplementary-color: #9972A0;
 
+    --accent-color-transparent: #CE949680;
+    --accent-coplementary-color-transparent: #9972A080;
+
+    --gradient: linear-gradient(90deg, var(--accent-color) 0%, var(--accent-coplementary-color) 100%);
+
 
     /* duotone */
-    --base:              #CE9496;
+    --base:              var(--accent-color);
     --bg-blend:          multiply;
-    --blur:              0px;
     --fg-blend:          lighten;
-    --foreground:        #4d005a;
-    --opacity:           1;
+    --foreground:        #4d005a;/* complimentary-dark */
   }
 html, body {
     width: 100%;

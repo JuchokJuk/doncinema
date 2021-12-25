@@ -5,14 +5,10 @@
 .text {
     gap: 64px;
     padding: 32px;
-    
     height: 100%;
 }
 .firstHalf{
     gap: 16px;
 }
 
-app-image{
-  flex-shrink: 0;
-  width: 50%;
-}
+

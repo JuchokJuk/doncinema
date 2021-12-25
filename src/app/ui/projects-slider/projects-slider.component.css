@@ -1,0 +1,27 @@
+.swiperContainer{
+    min-width: 0;
+    position: relative;
+}
+
+::ng-deep .cardsSlider .swiper-slide {
+    width: fit-content !important;
+    height: auto;
+}
+::ng-deep .cardsSlider .swiper-slide .card {
+    max-width: 928px;
+}
+
+
+.controls{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 40px;
+}
+
+.controls span{
+    margin: 16px;
+    display: block;
+    z-index: 1;
+}
+

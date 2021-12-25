@@ -1,0 +1,9 @@
+::ng-deep .tabsContainer .swiperContainer{
+    height: 100%;
+}
+.tab{
+    height: 100%;
+}
+::ng-deep .tabsContainer .swiper{
+    height: 100%;
+}

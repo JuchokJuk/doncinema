@@ -1,0 +1,16 @@
+<div #swiperContainer class="swiperContainer border">
+    <swiper [config]="config" class="cardsSlider">
+
+        <ng-template swiperSlide *ngFor="let card of cards; index as i">
+            <app-project-card [header]="card.title" [headerLevel]="3" [number]="i+1 +'/' + cards.length"
+                [text]="card.description"
+                [imagePath]="'https://thumbs.dfs.ivi.ru/storage6/contents/8/9/89c67282b4e09b515a10e8067eb027.jpg'">
+            </app-project-card>
+        </ng-template>
+
+    </swiper>
+    <div class="controls row">
+        <span (click)="toLeft()">←</span>
+        <span (click)="toRight()">→</span>
+    </div>
+</div>

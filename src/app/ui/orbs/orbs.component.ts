@@ -66,7 +66,7 @@ class movingCircle {
     this.r = this.rCircle;
     this.h = this.getRandomNumber(0, (this.boundX + this.boundY) / 8);
 
-    this.color = Math.random() < 0.5 ? getComputedStyle(document.body).getPropertyValue('--accent-color') : getComputedStyle(document.body).getPropertyValue('--accent-coplementary-color');
+    this.color = Math.random() < 0.5 ? getComputedStyle(document.body).getPropertyValue('--accent-color-transparent') : getComputedStyle(document.body).getPropertyValue('--accent-coplementary-color-transparent');
   }
   getRandomNumber(min: number, max: number) {
     return Math.random() * (max - min) + min;
