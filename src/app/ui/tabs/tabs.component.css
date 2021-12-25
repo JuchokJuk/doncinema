@@ -1,16 +1,26 @@
-::ng-deep .tabsNav.swiper {
-    display: flex;
-    justify-content: center;
-}
-
 ::ng-deep .tabsNav .swiper-slide {
     width: fit-content !important;
     text-align: center;
     padding: 12px 16px;
 
-    white-space: nowrap
+    white-space: nowrap;
+}
+
+::ng-deep .tabsContainer .swiper-slide {
+    height: auto;
 }
 
 ::ng-deep .selected {
     background: var(--accent-color) var(--noise);
+}
+
+
+::ng-deep .tabsContainer .swiperContainer{
+    height: 100%;
+}
+.tab{
+    height: 100%;
+}
+::ng-deep .tabsContainer .swiper{
+    height: 100%;
 }

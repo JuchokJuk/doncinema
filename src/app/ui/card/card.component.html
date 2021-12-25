@@ -9,8 +9,8 @@
             <p>{{text}}</p>
         </div>
         <div class="row spaceBetween">
-            <b>{{number}}</b>
-            <span class="button"  *ngIf="button">{{button}}</span>
+            <b *ngIf="number">{{number}}</b>
+            <span class="button" *ngIf="button">{{button}}</span>
         </div>
     </div>
     <div class="image border" *ngIf="imagePath">

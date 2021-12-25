@@ -11,7 +11,7 @@ export class CardComponent implements OnInit {
   @Input() headerLevel!: number;
 
   @Input() text!: string;
-  @Input() number!: number;
+  @Input() number!: string;
   @Input() button!: string;
 
   @Input() imagePath!: string;
