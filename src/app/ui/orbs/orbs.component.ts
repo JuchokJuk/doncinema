@@ -9,7 +9,7 @@ export class OrbsComponent {
   public ctx!: CanvasRenderingContext2D;
   height: number = window.innerHeight;
   width: number = window.innerWidth;
-  numberOfCircles: number = 10;
+  numberOfCircles: number = 5;
   @HostListener('window:resize')
   onResize() {
     this.width = window.innerWidth;

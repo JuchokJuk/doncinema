@@ -1,40 +1,12 @@
 <div #swiperContainer class="swiperContainer">
     <swiper [config]="config" #swiperTabs class="cardsSlider">
-        <ng-template swiperSlide>
-            <app-card [header]="'Заголовок'" [headerLevel]="3" [number]="1" [button]="'кнопка'"
-                [text]="'Какой-то текст. Текст который достаточно длинный и его немного дольше читать, ну в общем-то больше сказать нечего, этот текст закончится где-то здесь.'"
+
+        <ng-template swiperSlide *ngFor="let card of cards">
+            <app-card [header]="card.title" [headerLevel]="3" [number]="1" [button]="'кнопка'"
+                [text]="card.description"
                 [imagePath]="'https://thumbs.dfs.ivi.ru/storage6/contents/8/9/89c67282b4e09b515a10e8067eb027.jpg'">
             </app-card>
         </ng-template>
-        <ng-template swiperSlide>
-            <app-card [header]="'Заголовок'" [headerLevel]="3" [number]="1" [button]="'кнопка'"
-                [text]="'Какой-то текст. Текст который достаточно длинный и его немного дольше читать, ну в общем-то больше сказать нечего, этот текст закончится где-то здесь.'"
-                [imagePath]="'https://thumbs.dfs.ivi.ru/storage6/contents/8/9/89c67282b4e09b515a10e8067eb027.jpg'">
-            </app-card>
-        </ng-template>
-        <ng-template swiperSlide>
-            <app-card [header]="'Заголовок'" [headerLevel]="3" [number]="1" [button]="'кнопка'"
-                [text]="'Какой-то текст. Текст который достаточно длинный и его немного дольше читать, ну в общем-то больше сказать нечего, этот текст закончится где-то здесь.'"
-                [imagePath]="'https://thumbs.dfs.ivi.ru/storage6/contents/8/9/89c67282b4e09b515a10e8067eb027.jpg'">
-            </app-card>
-        </ng-template>
-        <ng-template swiperSlide>
-            <app-card [header]="'Заголовок'" [headerLevel]="3" [number]="1" [button]="'кнопка'"
-                [text]="'Какой-то текст. Текст который достаточно длинный и его немного дольше читать, ну в общем-то больше сказать нечего, этот текст закончится где-то здесь.'"
-                [imagePath]="'https://thumbs.dfs.ivi.ru/storage6/contents/8/9/89c67282b4e09b515a10e8067eb027.jpg'">
-            </app-card>
-        </ng-template>
-        <ng-template swiperSlide>
-            <app-card [header]="'Заголовок'" [headerLevel]="3" [number]="1" [button]="'кнопка'"
-                [text]="'Какой-то текст. Текст который достаточно длинный и его немного дольше читать, ну в общем-то больше сказать нечего, этот текст закончится где-то здесь.'"
-                [imagePath]="'https://thumbs.dfs.ivi.ru/storage6/contents/8/9/89c67282b4e09b515a10e8067eb027.jpg'">
-            </app-card>
-        </ng-template>
-        <ng-template swiperSlide>
-            <app-card [header]="'Заголовок'" [headerLevel]="3" [number]="1" [button]="'кнопка'"
-                [text]="'Какой-то текст. Текст который достаточно длинный и его немного дольше читать, ну в общем-то больше сказать нечего, этот текст закончится где-то здесь.'"
-                [imagePath]="'https://thumbs.dfs.ivi.ru/storage6/contents/8/9/89c67282b4e09b515a10e8067eb027.jpg'">
-            </app-card>
-        </ng-template>
+
     </swiper>
 </div>

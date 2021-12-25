@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { ModelService, Services } from 'src/app/model/model.service';
 import { SwiperOptions } from 'swiper';
 
 @Component({
@@ -7,10 +8,14 @@ import { SwiperOptions } from 'swiper';
   styleUrls: ['./tabs.component.css']
 })
 export class TabsComponent {
+  constructor(private modelService: ModelService) {}
+  services:Services = this.modelService.services;
+
   @ViewChild('swiperTabsNavWrapper', { static: false }) swiperTabsNavWrapper!: ElementRef;
   @ViewChild('swiperTabsWrapper', { static: false }) swiperTabsWrapper!: ElementRef;
 
-  public ctx!: CanvasRenderingContext2D;
+
+
   config: SwiperOptions = {
     slidesPerView: 'auto',
   };
@@ -24,8 +29,8 @@ export class TabsComponent {
     for (let i = 0; i < this.tabNav.length; i++) {
       this.tabNav[i].addEventListener('click', this.onClick, false);
     }
+    this.tabNav[0].classList.add('selected');
   }
-
 
   onClick(event: any) {
     for (let i = 0; i < event.target.parentElement.children.length; i++) {
@@ -37,9 +42,10 @@ export class TabsComponent {
     this.swiperTabsWrapper.nativeElement.firstElementChild.swiper.slideTo(this.tabNav.indexOf(event.target), 300, false);
   }
 
+
+
   configTabs: SwiperOptions = {
-    slidesPerView: 1,
-    touchReleaseOnEdges: true
+    slidesPerView: 1
   };
 
   onIndexChange(e: number) {

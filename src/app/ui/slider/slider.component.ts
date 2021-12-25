@@ -1,5 +1,6 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 import Swiper, { SwiperOptions } from 'swiper';
+import {Card}  from 'src/app/model/model.service';
 
 @Component({
   selector: 'app-slider',
@@ -7,7 +8,7 @@ import Swiper, { SwiperOptions } from 'swiper';
   styleUrls: ['./slider.component.css']
 })
 export class SliderComponent {
-
+  @Input() cards!: Card[];
   config: SwiperOptions = {
     slidesPerView: 'auto',
     nested: true,

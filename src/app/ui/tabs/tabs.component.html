@@ -3,68 +3,24 @@
 
         <div #swiperTabsNavWrapper class="border">
             <swiper [config]="config" class="tabsNav">
-                <ng-template swiperSlide class="selected border">Транспорт</ng-template>
-                <ng-template swiperSlide class="border">Аутсорсинг</ng-template>
-                <ng-template swiperSlide class="border">Аренда костюмов и реквизита</ng-template>
-                <ng-template swiperSlide class="border">Организаторские услуги</ng-template>
-                <ng-template swiperSlide class="border">Прочее</ng-template>
+
+                <ng-template swiperSlide class="border" *ngFor="let category of services.categories">{{category.title}}
+                </ng-template>
+
             </swiper>
         </div>
 
     </div>
 </div>
 
-
-
-
 <div class="tabsContainer border" #swiperTabsWrapper>
-
     <swiper [config]="configTabs" (indexChange)="onIndexChange($event)" #swiperTabs>
-        <ng-template swiperSlide>
 
+        <ng-template swiperSlide *ngFor="let category of services.categories">
             <div class="tab">
-
-
-                <app-slider></app-slider>
-
-
+                <app-slider [cards]="category.cards"></app-slider>
             </div>
-
         </ng-template>
-        <ng-template swiperSlide>
 
-            <div class="tab">
-
-                <app-slider></app-slider>
-
-            </div>
-
-        </ng-template>
-        <ng-template swiperSlide>
-
-            <div class="tab">
-
-                <app-slider></app-slider>
-
-            </div>
-
-        </ng-template>
-        <ng-template swiperSlide>
-
-            <div class="tab">
-
-                <app-slider></app-slider>
-
-            </div>
-
-        </ng-template>
-        <ng-template swiperSlide>
-
-            <div class="tab">
-
-                <app-slider></app-slider>
-
-            </div>
-
-        </ng-template>
     </swiper>
+</div>
