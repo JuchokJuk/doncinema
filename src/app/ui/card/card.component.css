@@ -12,7 +12,8 @@
     gap: 16px;
 }
 
-app-image{
+.row app-image{
   flex-shrink: 0;
   width: 50%;
 }
+

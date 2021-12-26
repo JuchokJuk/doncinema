@@ -6,6 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
+  @Input() orientation!: string;
 
   @Input() header!: string;
   @Input() headerLevel!: number;

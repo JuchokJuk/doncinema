@@ -13,7 +13,6 @@ import { TabsComponent } from './ui/tabs/tabs.component';
 import { SliderComponent } from './ui/slider/slider.component';
 import { DiagonalComponent } from './ui/diagonal/diagonal.component';
 import { ProjectsComponent } from './ui/projects/projects.component';
-import { ProjectCardComponent } from './ui/project-card/project-card.component';
 import { ImageComponent } from './ui/image/image.component';
 import { ProjectsSliderComponent } from './ui/projects-slider/projects-slider.component';
 
@@ -31,7 +30,6 @@ import { ProjectsSliderComponent } from './ui/projects-slider/projects-slider.co
     SliderComponent,
     DiagonalComponent,
     ProjectsComponent,
-    ProjectCardComponent,
     ImageComponent,
     ProjectsSliderComponent,
   ],
