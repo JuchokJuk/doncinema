@@ -1,19 +1,22 @@
-.card {
+.cardContainer {
     height: 100%;
+    display: flex;
+}
+
+.card {
+    display: flex;
 }
 
 .text {
     gap: 64px;
     padding: 32px;
-    
-    height: 100%;
+    /* height: 100%; */
 }
-.firstHalf{
+
+.firstHalf {
     gap: 16px;
 }
 
-.row app-image{
-  flex-shrink: 0;
-  width: 50%;
+.row .image {
+    min-width: 360px;
 }
-

@@ -19,6 +19,7 @@ export class ModelService {
         }
 
         this.services = {
+            title:"Услуги",
             categories: [
                 {
                     title: "Транспорт",
@@ -104,6 +105,7 @@ export class ModelService {
             ]
         }
         this.projects = {
+            title:"Проекты",
             films: [
                 {
                     title: "Хозяин",
@@ -152,15 +154,19 @@ export class ModelService {
 
 
 export interface Services {
+    title:string;
     categories: Category[];
 }
 export interface Projects {
+    title:string;
     films: Card[];
 }
 interface Partners {
+    title:string;
     partners: Partner[];
 }
 interface Contacts {
+    title:string;
     contactTypes: ContactType[];
 }
 
@@ -175,7 +181,7 @@ interface Category {
 }
 interface Partner {
     name: string;
-    logoImgPath: string;
+    logoImagePath: string;
 }
 interface ContactType {
     title: string;

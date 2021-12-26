@@ -13,6 +13,7 @@
 .button {
     padding: 16px;
 }
-svg{
+
+svg {
     fill: var(--main-contrast-color);
 }

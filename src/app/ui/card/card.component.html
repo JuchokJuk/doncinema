@@ -1,19 +1,24 @@
-<div class="card border" [ngClass]="orientation == 'vertical' ? 'row' : 'column-reverse'">
-    <div class="text column spaceBetween">
-        <div class="firstHalf column">
+<div class="cardContainer">
+    <div class="card border adaptiveParentReverse" [ngClass]="orientation == 'vertical' ? 'row' : 'column-reverse'">
 
-            <div *ngIf="header">
-                <h2 *ngIf="headerLevel == 2">{{header}}</h2>
-                <h3 *ngIf="headerLevel == 3">{{header}}</h3>
-                <h4 *ngIf="headerLevel == 4">{{header}}</h4>
+        <div class="text column spaceBetween adaptiveChild">
+            <div class="firstHalf column">
+
+                <div *ngIf="header">
+                    <h2 *ngIf="headerLevel == 2">{{header}}</h2>
+                    <h3 *ngIf="headerLevel == 3">{{header}}</h3>
+                    <h4 *ngIf="headerLevel == 4">{{header}}</h4>
+                </div>
+
+                <p class="paragraphWidthControl">{{text}}</p>
             </div>
+            <div class="row spaceBetween">
+                <b *ngIf="number">{{number}}</b>
+                <span class="button" *ngIf="button">{{button}}</span>
+            </div>
+        </div>
 
-            <p>{{text}}</p>
-        </div>
-        <div class="row spaceBetween">
-            <b *ngIf="number">{{number}}</b>
-            <span class="button" *ngIf="button">{{button}}</span>
-        </div>
+        <app-image [imagePath]="imagePath" *ngIf="imagePath" class="adaptiveChild image"></app-image>
+
     </div>
-    <app-image [imagePath]="imagePath" *ngIf="imagePath"></app-image>
 </div>

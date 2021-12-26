@@ -1,16 +1,20 @@
-.swiperContainer{
+.swiperContainer {
     min-width: 0;
 }
 
 ::ng-deep .cardsSlider .swiper-slide {
     width: fit-content !important;
 }
+
 ::ng-deep .cardsSlider .swiper-slide .card {
     max-width: 928px;
 }
 
-
-
+@media (max-width: 960px) {
+     ::ng-deep .cardsSlider .swiper-slide .card {
+        width: calc(100vw - 48px);
+    }
+}
 
 
 /* если ширина экрана меньше 960px сделать карточку чучуть уже */

@@ -1,5 +1,5 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
-import { ModelService, Services } from 'src/app/model/model.service';
+import { Component, ElementRef, Input, ViewChild } from '@angular/core';
+import { Services } from 'src/app/model/model.service';
 import { SwiperOptions } from 'swiper';
 
 @Component({
@@ -8,9 +8,8 @@ import { SwiperOptions } from 'swiper';
   styleUrls: ['./tabs.component.css']
 })
 export class TabsComponent {
-  constructor(private modelService: ModelService) {}
-  services:Services = this.modelService.services;
 
+  @Input() services!: Services;
   @ViewChild('swiperTabsNavWrapper', { static: false }) swiperTabsNavWrapper!: ElementRef;
   @ViewChild('swiperTabsWrapper', { static: false }) swiperTabsWrapper!: ElementRef;
 

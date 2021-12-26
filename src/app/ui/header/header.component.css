@@ -14,6 +14,7 @@
     padding: 32px;
     align-items: center;
 }
-svg{
+
+svg {
     fill: var(--main-contrast-color);
 }
