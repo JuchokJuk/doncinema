@@ -18,6 +18,7 @@ import { ProjectsSliderComponent } from './ui/projects-slider/projects-slider.co
 import { PartnersComponent } from './ui/partners/partners.component';
 import { ContactsComponent } from './ui/contacts/contacts.component';
 import { FooterComponent } from './ui/footer/footer.component';
+import { PartnerCardComponent } from './ui/partner-card/partner-card.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { FooterComponent } from './ui/footer/footer.component';
     PartnersComponent,
     ContactsComponent,
     FooterComponent,
+    PartnerCardComponent,
   ],
   imports: [
     BrowserModule,

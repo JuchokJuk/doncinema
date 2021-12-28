@@ -153,7 +153,7 @@ export class ModelService {
             title: "Наши партнёры",
             partners: [
                 {
-                    name: "LOOK FILM",
+                    name: "LookFilm",
                     logoImagePath: ""
                 },
                 {
@@ -163,6 +163,31 @@ export class ModelService {
                 {
                     name: "ИП Мосин М.Н.",
                     logoImagePath: ""
+                }
+            ]
+        }
+        this.contacts = {
+            title: "Контакты",
+            contactTypes: [
+                {
+                    title: "Адрес",
+                    contacts: [
+                        "г. Ростов-на-Дону ул. Платона Кляты 15 офис 66",
+                        "г. Ростов-на-Дону ул. Вавилова 58 офис 309"
+                    ]
+                },
+                {
+                    title: "Телефон",
+                    contacts: [
+                        "8 (929) 817-24-44",
+                        "8 (863) 279-38-09"
+                    ]
+                },
+                {
+                    title: "Email",
+                    contacts: [
+                        "buh@donsinema.ru"
+                    ]
                 }
             ]
         }
@@ -183,7 +208,7 @@ export interface Partners {
     title: string;
     partners: Partner[];
 }
-interface Contacts {
+export interface Contacts {
     title: string;
     contactTypes: ContactType[];
 }

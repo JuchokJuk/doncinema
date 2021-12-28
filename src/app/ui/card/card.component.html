@@ -10,7 +10,7 @@
                     <h4 *ngIf="headerLevel == 4">{{header}}</h4>
                 </div>
 
-                <p class="paragraphWidthControl">{{text}}</p>
+                <p class="paragraphWidthControl" *ngIf="text">{{text}}</p>
             </div>
             <div class="row spaceBetween">
                 <b *ngIf="number">{{number}}</b>

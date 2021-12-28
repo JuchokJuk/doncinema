@@ -1,0 +1,11 @@
+.card {
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    height: 100%;
+}
+span{
+    text-align: center;
+}
