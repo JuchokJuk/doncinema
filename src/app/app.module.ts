@@ -15,6 +15,9 @@ import { DiagonalComponent } from './ui/diagonal/diagonal.component';
 import { ProjectsComponent } from './ui/projects/projects.component';
 import { ImageComponent } from './ui/image/image.component';
 import { ProjectsSliderComponent } from './ui/projects-slider/projects-slider.component';
+import { PartnersComponent } from './ui/partners/partners.component';
+import { ContactsComponent } from './ui/contacts/contacts.component';
+import { FooterComponent } from './ui/footer/footer.component';
 
 
 @NgModule({
@@ -32,6 +35,9 @@ import { ProjectsSliderComponent } from './ui/projects-slider/projects-slider.co
     ProjectsComponent,
     ImageComponent,
     ProjectsSliderComponent,
+    PartnersComponent,
+    ContactsComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,9 @@
+<div class="widthControlContainer border">
+    <div class="widthControl">
+        <app-headline [header]="partners.title"></app-headline>
+        <div class="adaptiveParent">
+            <app-card *ngFor="let partner of partners.partners; index as i;" class="adaptiveChild" [header]="partner.name" [headerLevel]="2" [number]="(i + 1).toString()">
+            </app-card>
+        </div>
+    </div>
+</div>

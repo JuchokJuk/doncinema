@@ -19,7 +19,7 @@ export class ModelService {
         }
 
         this.services = {
-            title:"Услуги",
+            title: "Услуги",
             categories: [
                 {
                     title: "Транспорт",
@@ -105,7 +105,7 @@ export class ModelService {
             ]
         }
         this.projects = {
-            title:"Проекты",
+            title: "Проекты",
             films: [
                 {
                     title: "Хозяин",
@@ -149,24 +149,42 @@ export class ModelService {
                 }
             ]
         }
+        this.partners = {
+            title: "Наши партнёры",
+            partners: [
+                {
+                    name: "LOOK FILM",
+                    logoImagePath: ""
+                },
+                {
+                    name: "Продюсерский центр браво",
+                    logoImagePath: ""
+                },
+                {
+                    name: "ИП Мосин М.Н.",
+                    logoImagePath: ""
+                }
+            ]
+        }
     }
 }
 
 
+
 export interface Services {
-    title:string;
+    title: string;
     categories: Category[];
 }
 export interface Projects {
-    title:string;
+    title: string;
     films: Card[];
 }
-interface Partners {
-    title:string;
+export interface Partners {
+    title: string;
     partners: Partner[];
 }
 interface Contacts {
-    title:string;
+    title: string;
     contactTypes: ContactType[];
 }
 
