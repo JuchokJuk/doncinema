@@ -11,7 +11,7 @@
 
                 <p class="paragraphWidthControl" *ngIf="text">{{text}}</p>
             </div>
-            <div class="row spaceBetween">
+            <div class="row spaceBetween" *ngIf="number || button">
                 <b *ngIf="number">{{number}}</b>
                 <span class="button" *ngIf="button">{{button}}</span>
             </div>
