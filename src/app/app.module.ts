@@ -19,6 +19,7 @@ import { PartnersComponent } from './ui/partners/partners.component';
 import { ContactsComponent } from './ui/contacts/contacts.component';
 import { FooterComponent } from './ui/footer/footer.component';
 import { PartnerCardComponent } from './ui/partner-card/partner-card.component';
+import { ContactsCardComponent } from './ui/contacts-card/contacts-card.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { PartnerCardComponent } from './ui/partner-card/partner-card.component';
     ContactsComponent,
     FooterComponent,
     PartnerCardComponent,
+    ContactsCardComponent,
   ],
   imports: [
     BrowserModule,

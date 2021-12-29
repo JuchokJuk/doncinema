@@ -1,0 +1,18 @@
+<div class="cardContainer">
+    <div class="card border" >
+
+        <div class="text column spaceBetween ">
+            <div class="firstHalf column">
+                <h4>{{header}}</h4>
+                <p *ngFor="let item of list">{{item}}</p>
+            </div>
+            <div class="row spaceBetween" *ngIf="number || button">
+                <b *ngIf="number">{{number}}</b>
+                <span class="button" *ngIf="button">{{button}}</span>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>

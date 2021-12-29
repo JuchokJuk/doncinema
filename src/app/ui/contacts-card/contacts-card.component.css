@@ -1,0 +1,23 @@
+.cardContainer {
+    height: 100%;
+    display: flex;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+}
+
+.text {
+    gap: 64px;
+    padding: 32px;
+    /* height: 100%; */
+}
+
+.firstHalf {
+    gap: 16px;
+}
+
+.row .image {
+    min-width: 360px;
+}

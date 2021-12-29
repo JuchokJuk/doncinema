@@ -10,5 +10,4 @@ export class ContactsComponent {
 
   constructor(private modelService: ModelService) {}
   contacts:Contacts = this.modelService.contacts;
-
 }
