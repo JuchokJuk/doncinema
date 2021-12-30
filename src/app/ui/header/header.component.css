@@ -13,8 +13,38 @@
 .graphics {
     padding: 32px;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 svg {
     fill: var(--main-contrast-color);
+}
+
+@media(max-width: 960px){
+    .graphics {
+        display:none;
+    }
+}
+
+@media(max-width: 860px){
+    h1{
+        font-size: 70px;
+    }
+}
+@media(max-width: 760px){
+    h1{
+        font-size: 60px;
+    }
+}
+@media(max-width: 660px){
+    h1{
+        font-size: 50px;
+    }
+}
+@media(max-width: 560px){
+    h1{
+        font-size: 40px;
+        word-wrap: break-word;
+    }
 }
