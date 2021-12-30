@@ -170,13 +170,6 @@ export class ModelService {
             title: "Контакты",
             contactTypes: [
                 {
-                    title: "Адрес",
-                    contacts: [
-                        "г. Ростов-на-Дону ул. Платона Кляты 15 офис 66",
-                        "г. Ростов-на-Дону ул. Вавилова 58 офис 309"
-                    ]
-                },
-                {
                     title: "Телефон",
                     contacts: [
                         "8 (929) 817-24-44",
@@ -187,6 +180,13 @@ export class ModelService {
                     title: "Email",
                     contacts: [
                         "buh@donsinema.ru"
+                    ]
+                },
+                {
+                    title: "Адрес",
+                    contacts: [
+                        "г. Ростов-на-Дону ул. Платона Кляты 15 офис 66",
+                        "г. Ростов-на-Дону ул. Вавилова 58 офис 309"
                     ]
                 }
             ]
