@@ -8,6 +8,8 @@
 
 .logo {
     margin: 16px;
+    height: 40px;
+    flex-shrink: 0;
 }
 
 .button {
@@ -16,4 +18,30 @@
 
 svg {
     fill: var(--main-contrast-color);
+}
+.burger{
+    padding: 16px;
+    display: none;
+}
+.burgerMenu{
+    display: none;
+}
+.burger mat-icon{
+    height: auto;
+    width: auto;
+    font-size: 36px;
+}
+.notBurger{
+    display: flex;
+}
+@media (max-width: 800px){
+    .burger{
+        display: flex;
+    }
+    .notBurger{
+        display: none;
+    }
+}
+.opened{
+    display: flex;
 }

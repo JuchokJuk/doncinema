@@ -20,7 +20,8 @@ import { ContactsComponent } from './ui/contacts/contacts.component';
 import { FooterComponent } from './ui/footer/footer.component';
 import { PartnerCardComponent } from './ui/partner-card/partner-card.component';
 import { ContactsCardComponent } from './ui/contacts-card/contacts-card.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,9 @@ import { ContactsCardComponent } from './ui/contacts-card/contacts-card.componen
   ],
   imports: [
     BrowserModule,
-    SwiperModule
+    SwiperModule,
+    BrowserAnimationsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

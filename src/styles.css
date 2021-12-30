@@ -82,14 +82,17 @@ h4 {
 }
 
 .spaceBetween {
+    display: flex;
     justify-content: space-between;
 }
 
 .flexEnd {
+    display: flex;
     align-items: flex-end;
 }
 
 .alignCenter {
+    display: flex;
     align-items: center;
 }
 
@@ -116,7 +119,7 @@ h4 {
     padding: 0 16px;
 }
 .paragraphWidthControl {
-    min-width: 360px;
+    min-width: 200px;
 }
 .captionhWidthControl {
     min-width: 100px;
@@ -145,4 +148,3 @@ h4 {
     flex-direction: row;
     flex-wrap: wrap-reverse;
 }
-

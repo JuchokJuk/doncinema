@@ -2,8 +2,8 @@
     <div class="widthControl">
         <app-headline [header]="contacts.title"></app-headline>
         <div class="adaptiveParent border">
-            <app-contacts-card *ngFor="let contactType of contacts.contactTypes; index as i" class="adaptiveChild"
-                [header]="contactType.title" [list]="contactType.contacts" [number]="(i+1).toString()">
+            <app-contacts-card *ngFor="let contactType of contacts.contactTypes" class="adaptiveChild"
+                [header]="contactType.title" [list]="contactType.contacts">
             </app-contacts-card>
             <div class="map">
                 <iframe src="https://59wr1.csb.app/" loading="lazy"></iframe>
