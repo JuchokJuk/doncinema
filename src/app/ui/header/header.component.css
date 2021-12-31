@@ -27,24 +27,3 @@ svg {
     }
 }
 
-@media(max-width: 860px){
-    h1{
-        font-size: 70px;
-    }
-}
-@media(max-width: 760px){
-    h1{
-        font-size: 60px;
-    }
-}
-@media(max-width: 660px){
-    h1{
-        font-size: 50px;
-    }
-}
-@media(max-width: 560px){
-    h1{
-        font-size: 40px;
-        word-wrap: break-word;
-    }
-}

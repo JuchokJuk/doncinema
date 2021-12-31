@@ -1,21 +1,13 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 @font-face {
     font-family: NueMachina;
     src: url("assets/neueMachina/NeueMachina-Light.otf") format("opentype");
     font-weight: light;
 }
-
 @font-face {
     font-family: NueMachina;
     src: url("assets/neueMachina/NeueMachina-Regular.otf") format("opentype");
     font-weight: regular;
 }
-
 @font-face {
     font-family: NueMachina;
     src: url("assets/neueMachina/NeueMachina-Ultrabold.otf") format("opentype");
@@ -24,15 +16,19 @@
 
 :root {
     --main-color: #E2E2E2;
-    --noise: url(./assets/blackNoise.png);
-    --main-contrast-color: #000000;
+    
     --main-medium-contrast-color: #252525;
+    --main-contrast-color: #000000;
     --main-low-contrast-color: #25252540;
+
     --accent-color: #CE9496;
     --accent-coplementary-color: #9972A0;
+
     --accent-color-transparent: #CE949680;
     --accent-coplementary-color-transparent: #9972A080;
-    --gradient: linear-gradient(90deg, var(--accent-color) 0%, var(--accent-coplementary-color) 100%);
+
+    --noise: url(./assets/blackNoise.png);
+
     /* duotone */
     --base: var(--accent-color);
     --bg-blend: multiply;
@@ -41,30 +37,40 @@
     /* complimentary-dark */
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html,
 body {
     width: 100%;
     height: 100%;
+}
+body{
     font-family: 'NueMachina';
     color: var(--main-contrast-color);
+    font-size: clamp(12px, 10.6667px + 0.5556vw, 16px);
 }
 
 h1 {
-    font-size: 80px;
+    font-size: clamp(27px, 9.3333px + 7.3611vw, 80px);
 }
 
 h2 {
-    font-size: 32px;
+    font-size: clamp(16px, 10.6667px + 2.2222vw, 32px);
 }
 
 h3 {
-    font-size: 32px;
+    font-size: clamp(16px, 10.6667px + 2.2222vw, 32px);
     font-weight: 200;
 }
-
-h4 {
-    font-size: 16px;
+h4{
+    font-size: clamp(12px, 10.6667px + 0.5556vw, 16px);
 }
+
+
 
 .row {
     display: flex;
