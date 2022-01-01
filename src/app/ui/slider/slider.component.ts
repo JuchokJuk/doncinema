@@ -12,7 +12,7 @@ export class SliderComponent {
   config: SwiperOptions = {
     slidesPerView: 'auto',
     nested: true,
-    centeredSlides: true
-  };
+    spaceBetween: 16
+    };
 
 }

@@ -1,0 +1,23 @@
+<div class="cardContainer">
+    <div class="card border adaptiveParentReverse" [ngClass]="orientation == 'vertical' ? 'row' : 'column-reverse'">
+
+        <div class="text column spaceBetween adaptiveChild">
+            <div class="firstHalf column">
+
+                <div *ngIf="header">
+                    <h2 *ngIf="headerLevel == 2">{{header}}</h2>
+                    <h3 *ngIf="headerLevel == 3">{{header}}</h3>
+                </div>
+
+                <p class="paragraphWidthControl" *ngIf="text">{{text}}</p>
+            </div>
+            <div class="row spaceBetween" *ngIf="number || button">
+                <b *ngIf="number">{{number}}</b>
+                <span class="button" *ngIf="button">{{button}}</span>
+            </div>
+        </div>
+
+        <app-image [imagePath]="imagePath" *ngIf="imagePath" class="adaptiveChild image"></app-image>
+
+    </div>
+</div>

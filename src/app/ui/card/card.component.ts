@@ -5,15 +5,8 @@ import { Component, Input } from '@angular/core';
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css']
 })
-export class CardComponent {
-  @Input() orientation!: string;
-
-  @Input() header!: string;
-  @Input() headerLevel!: number;
-
+export class CardComponent  {
+  @Input() imagePath!:string;
+  @Input() header!:string;
   @Input() text!: string;
-  @Input() number!: string;
-  @Input() button!: string;
-
-  @Input() imagePath!: string;
 }

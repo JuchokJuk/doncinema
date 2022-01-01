@@ -10,17 +10,16 @@
             </swiper>
         </div>
 
+        <div class="border" #swiperTabsWrapper>
+            <swiper [config]="configTabs" (indexChange)="onIndexChange($event)" class="tabsContainer">
+
+                <ng-template swiperSlide *ngFor="let category of services.categories">
+                    <div class="tab">
+                        <app-slider [cards]="category.cards"></app-slider>
+                    </div>
+                </ng-template>
+
+            </swiper>
+        </div>
     </div>
-</div>
-
-<div class="border" #swiperTabsWrapper>
-    <swiper [config]="configTabs" (indexChange)="onIndexChange($event)" class="tabsContainer">
-
-        <ng-template swiperSlide *ngFor="let category of services.categories">
-            <div class="tab">
-                <app-slider [cards]="category.cards"></app-slider>
-            </div>
-        </ng-template>
-
-    </swiper>
 </div>

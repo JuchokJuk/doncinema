@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { SwiperModule } from 'swiper/angular';
 import { MenuComponent } from './ui/menu/menu.component';
 import { HeaderComponent } from './ui/header/header.component';
-import { CardComponent } from './ui/card/card.component';
+import { BlockComponent } from './ui/block/block.component';
 import { OrbsComponent } from './ui/orbs/orbs.component';
 import { ServicesComponent } from './ui/services/services.component';
 import { HeadlineComponent } from './ui/headline/headline.component';
@@ -14,7 +14,6 @@ import { SliderComponent } from './ui/slider/slider.component';
 import { DiagonalComponent } from './ui/diagonal/diagonal.component';
 import { ProjectsComponent } from './ui/projects/projects.component';
 import { ImageComponent } from './ui/image/image.component';
-import { ProjectsSliderComponent } from './ui/projects-slider/projects-slider.component';
 import { PartnersComponent } from './ui/partners/partners.component';
 import { ContactsComponent } from './ui/contacts/contacts.component';
 import { FooterComponent } from './ui/footer/footer.component';
@@ -22,13 +21,14 @@ import { PartnerCardComponent } from './ui/partner-card/partner-card.component';
 import { ContactsCardComponent } from './ui/contacts-card/contacts-card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
+import { CardComponent } from './ui/card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     HeaderComponent,
-    CardComponent,
+    BlockComponent,
     OrbsComponent,
     ServicesComponent,
     HeadlineComponent,
@@ -37,12 +37,12 @@ import { MatIconModule } from '@angular/material/icon';
     DiagonalComponent,
     ProjectsComponent,
     ImageComponent,
-    ProjectsSliderComponent,
     PartnersComponent,
     ContactsComponent,
     FooterComponent,
     PartnerCardComponent,
     ContactsCardComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
