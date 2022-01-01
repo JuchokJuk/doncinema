@@ -7,20 +7,20 @@
 }
 
 .logo {
-    margin: 16px;
+    margin: 1em;
     height: 40px;
     flex-shrink: 0;
 }
 
 .button {
-    padding: 16px;
+    padding: 1em;
 }
 
 svg {
     fill: var(--main-contrast-color);
 }
 .burger{
-    padding: 16px;
+    padding: 1em;
     display: none;
 }
 .burgerMenu{
@@ -29,7 +29,7 @@ svg {
 .burger mat-icon{
     height: auto;
     width: auto;
-    font-size: 36px;
+    font-size: 2.25em;
 }
 .notBurger{
     display: flex;

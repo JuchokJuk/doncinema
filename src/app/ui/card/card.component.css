@@ -9,13 +9,13 @@
 }
 
 .text {
-    gap: 64px;
-    padding: 32px;
+    gap: 4em;
+    padding: 2em;
     /* height: 100%; */
 }
 
 .firstHalf {
-    gap: 16px;
+    gap: 1em;
 }
 
 .row .image {

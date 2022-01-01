@@ -1,5 +1,5 @@
-.headline{
-    padding: 32px;
-    padding-top: 64px;
+.headline {
+    padding: calc(2 * var(--gap));
+    padding-top: calc(4 * var(--gap));
     position: relative;
 }

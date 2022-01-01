@@ -1,7 +1,7 @@
 ::ng-deep .tabsNav .swiper-slide {
     width: fit-content !important;
     text-align: center;
-    padding: 12px 16px;
+    padding: 1em;
     white-space: nowrap;
 }
 

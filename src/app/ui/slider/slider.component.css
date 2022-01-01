@@ -12,7 +12,7 @@
 
 @media (max-width: 960px) {
      ::ng-deep .cardsSlider .swiper-slide .card {
-        width: calc(100vw - 48px);
+        width: calc(100vw - 3em);
     }
 }
 

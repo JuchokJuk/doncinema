@@ -1,10 +1,12 @@
 <div class="cardContainer">
-    <div class="card border" >
+    <div class="card border">
 
         <div class="text column spaceBetween ">
             <div class="firstHalf column">
                 <h4>{{header}}</h4>
-                <p *ngFor="let item of list">{{item}}</p>
+                <ul>
+                    <li *ngFor="let item of list">{{item}}</li>
+                </ul>
             </div>
             <div class="row spaceBetween" *ngIf="number || button">
                 <b *ngIf="number">{{number}}</b>
