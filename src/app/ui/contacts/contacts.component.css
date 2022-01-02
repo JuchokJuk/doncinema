@@ -10,3 +10,8 @@ iframe {
     width: 100%;
     background: #ffffff40;
 }
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

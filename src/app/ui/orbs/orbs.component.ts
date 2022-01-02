@@ -30,8 +30,8 @@ export class OrbsComponent {
       this.ctx.clearRect(0, 0, this.width, this.height);
       for (var i = 0; i < circles.length; i++) {
         circles[i].calcPos();
-        this.drawCircle(this.width*1/8  + circles[i].x, 0 + circles[i].y, circles[i].rCircle, circles[i].color);
-        this.drawCircle(this.width*7/8 + circles[i].x, this.height + circles[i].y, circles[i].rCircle, circles[i].color);
+        this.drawCircle(this.width * 1 / 8 + circles[i].x, 0 + circles[i].y, circles[i].rCircle, circles[i].color);
+        this.drawCircle(this.width * 7 / 8 + circles[i].x, this.height + circles[i].y, circles[i].rCircle, circles[i].color);
       }
       this.render(circles);
     }
@@ -66,7 +66,7 @@ class movingCircle {
     this.r = this.rCircle;
     this.h = this.getRandomNumber(0, (this.boundX + this.boundY) / 8);
 
-    this.color = Math.random() < 0.5 ? getComputedStyle(document.body).getPropertyValue('--accent-color-transparent') : getComputedStyle(document.body).getPropertyValue('--accent-coplementary-color-transparent');
+    setTimeout(() => { this.color = Math.random() < 0.5 ? getComputedStyle(document.body).getPropertyValue('--accent-color-transparent') : getComputedStyle(document.body).getPropertyValue('--accent-coplementary-color-transparent'); }, 10); // ngAfterViewInit does not wait for styles to load
   }
   getRandomNumber(min: number, max: number) {
     return Math.random() * (max - min) + min;

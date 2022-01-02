@@ -6,10 +6,12 @@
     position: relative;
     padding: 2em;
     padding-top: 7em;
-    gap: 2em;
+
     width: 100%;
 }
-
+.numberAndGraphic{
+    margin-top: 2em;
+}
 .graphics {
     padding: 2em;
     align-items: center;

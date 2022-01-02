@@ -3,11 +3,13 @@
     src: url("assets/neueMachina/NeueMachina-Light.otf") format("opentype");
     font-weight: light;
 }
+
 @font-face {
     font-family: NueMachina;
     src: url("assets/neueMachina/NeueMachina-Regular.otf") format("opentype");
     font-weight: regular;
 }
+
 @font-face {
     font-family: NueMachina;
     src: url("assets/neueMachina/NeueMachina-Ultrabold.otf") format("opentype");
@@ -16,7 +18,7 @@
 
 :root {
     --main-color: #E2E2E2;
-    
+
     --main-medium-contrast-color: #252525;
     --main-contrast-color: #000000;
     --main-low-contrast-color: #25252540;
@@ -49,7 +51,8 @@ body {
     width: 100%;
     height: 100%;
 }
-body{
+
+body {
     font-family: 'NueMachina';
     color: var(--main-contrast-color);
     font-size: clamp(12px, 10.6667px + 0.5556vw, 16px);
@@ -67,7 +70,8 @@ h3 {
     font-size: clamp(16px, 10.6667px + 2.2222vw, 32px);
     font-weight: 200;
 }
-h4{
+
+h4 {
     font-size: clamp(12px, 10.6667px + 0.5556vw, 16px);
 }
 
@@ -125,12 +129,7 @@ h4{
     max-width: 960px;
     padding: 0 1em;
 }
-.paragraphWidthControl {
-    /* min-width: 200px; */
-}
-.captionhWidthControl {
-    /* min-width: 100px; */
-}
+
 
 .heightControl {
     display: flex;
@@ -148,6 +147,7 @@ h4{
 
 .adaptiveChild {
     flex: 1;
+    min-width: 18em;
 }
 
 .adaptiveParentReverse {

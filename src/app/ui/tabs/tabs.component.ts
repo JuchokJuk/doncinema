@@ -44,7 +44,7 @@ export class TabsComponent {
 
 
   configTabs: SwiperOptions = {
-    slidesPerView: 1
+    slidesPerView: 'auto'
   };
 
   onIndexChange(e: number) {

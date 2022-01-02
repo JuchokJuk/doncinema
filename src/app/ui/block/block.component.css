@@ -1,23 +1,13 @@
-.cardContainer {
+.block{
     height: 100%;
-    display: flex;
 }
 
-.card {
-    width: 100%;
-    display: flex;
+.textAndButton {
+    gap: 4em;
+    padding: 2em;
+    height: 100%;
 }
 
 .text {
-    gap: 4em;
-    padding: 2em;
-    /* height: 100%; */
-}
-
-.firstHalf {
     gap: 1em;
-}
-
-.row .image {
-    min-width: 50%;
 }

@@ -2,9 +2,12 @@
     <div class="widthControl">
         <app-headline [header]="contacts.title"></app-headline>
         <div class="adaptiveParent border">
-            <app-contacts-card *ngFor="let contactType of contacts.contactTypes" class="adaptiveChild"
-                [header]="contactType.title" [list]="contactType.contacts">
-            </app-contacts-card>
+            <app-block *ngFor="let contactType of contacts.contactTypes" class="adaptiveChild">
+                <h4>{{contactType.title}}</h4>
+                <ul>
+                    <li *ngFor="let item of contactType.contacts ">{{item}}</li>
+                </ul>
+            </app-block>
             <div class="map">
                 <iframe src="https://59wr1.csb.app/" loading="lazy"></iframe>
             </div>

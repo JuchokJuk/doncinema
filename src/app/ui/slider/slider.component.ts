@@ -11,8 +11,7 @@ export class SliderComponent {
   @Input() cards!: Card[];
   config: SwiperOptions = {
     slidesPerView: 'auto',
-    nested: true,
-    spaceBetween: 16
+    nested: true
     };
 
 }
