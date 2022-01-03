@@ -37,7 +37,6 @@
     --fg-blend: lighten;
     --foreground: #4d005a;
     /* complimentary-dark */
-    --gap: clamp(12px, 10.6667px + 0.5556vw, 16px);
 }
 
 * {
@@ -120,6 +119,7 @@ h4 {
 }
 
 .widthControlContainer {
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -128,15 +128,6 @@ h4 {
     width: 100%;
     max-width: 960px;
     padding: 0 1em;
-}
-
-
-.heightControl {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: center;
-    padding: 128px 0;
 }
 
 .adaptiveParent {

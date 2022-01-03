@@ -37,7 +37,7 @@ svg {
 
 @media(max-width: 960px) {
     .header{
-        padding-top: 1em;
+        padding-top: 2em;
     }
     .graphicsAndHeader {
         flex-direction: column;

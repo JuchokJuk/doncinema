@@ -1,6 +1,8 @@
 .image {
     width: 100%;
-    height: 100%;
+    height: 100%;    
+    background-color: var(--base);
+    position: relative;
 }
 
 img {
@@ -9,20 +11,11 @@ img {
     object-fit: cover;
     display: block;
     /* z-index:-1; */
-    position: relative;
-}
-
-.image {
-    background-color: var(--base);
-    position: relative;
-}
-
-.image img {
-    filter: grayscale(100%) contrast(1) blur(var(--blur));
+    filter: grayscale(100%) contrast(1);
     mix-blend-mode: var(--bg-blend);
-    opacity: var(--opacity);
     position: relative;
 }
+
 
 .image::before {
     background-color: var(--foreground);

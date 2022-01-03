@@ -4,7 +4,7 @@
         <ng-template swiperSlide *ngFor="let card of cards">
             <app-card [header]="card.title"
                 [text]="card.description"
-                [imagePath]="'https://thumbs.dfs.ivi.ru/storage6/contents/8/9/89c67282b4e09b515a10e8067eb027.jpg'">
+                [imagePath]="card.imagePath">
             </app-card>
         </ng-template>
 

@@ -1,0 +1,8 @@
+.appContainer{
+    max-height: 100%;
+    overflow: auto;
+    position: relative;
+}
+.hideScroll{
+    overflow: hidden;
+}

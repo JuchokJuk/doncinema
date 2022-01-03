@@ -1,3 +1,4 @@
 <div class="image border">
-    <img src="{{imagePath}}">
+    <img *ngIf="imagePath" src="{{imagePath}}">
+    <app-no-image *ngIf="!imagePath"></app-no-image>
 </div>

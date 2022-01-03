@@ -1,0 +1,25 @@
+<div *ngIf="isPopupOpened()" #popupContainer>
+    <div class="back"></div>
+    <div class="popupContainer">
+        <div class="widthControlContainer">
+            <div class="widthControl">
+                <div #popup class="popup column border">
+
+
+
+                    <app-image [imagePath]="getImagePath()"></app-image>
+
+
+                    <div class="text column">
+                        <h2>{{getHeader()}}</h2>
+                        <p>{{getText()}}</p>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
