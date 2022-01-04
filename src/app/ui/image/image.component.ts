@@ -6,5 +6,6 @@ import { Component, Input} from '@angular/core';
   styleUrls: ['./image.component.css']
 })
 export class ImageComponent {
+  @Input() cover:boolean = false;
   @Input() imagePath!: string;
 }

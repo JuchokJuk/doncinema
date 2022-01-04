@@ -24,10 +24,10 @@
     width:100%;
     padding: 2em;
     gap: 2em;
-    margin: 4.5em 0;
+    margin: 1em 0;
 }
 app-image {
-/* сделать обрезку картинки опциональной */
+    height: calc(70vh);
 }
 .text{
     gap: 1em;
