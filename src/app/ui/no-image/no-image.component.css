@@ -9,7 +9,7 @@
     background: linear-gradient(45deg, var(--accent-color) 0%, var(--accent-coplementary-color) 100%), var(--noise);
 }
 .logo {
-    margin: 1em;
-    height: 9em;
+    margin: 2em;
+    max-height: 9em;
     fill: #FFFFFF10;
 }

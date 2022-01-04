@@ -1,4 +1,4 @@
-.back{
+.back {
     background: #000000B0;
     position: fixed;
     width: 100%;
@@ -7,7 +7,8 @@
     left: 0;
     z-index: 3;
 }
-.popupContainer{
+
+.popupContainer {
     z-index: 4;
     position: fixed;
     width: 100%;
@@ -16,19 +17,41 @@
     left: 0;
     display: flex;
     justify-content: center;
-    overflow:auto;
+    overflow: auto;
 
 }
-.popup{
+
+.popup {
     background: var(--main-color) var(--noise);
-    width:100%;
-    padding: 2em;
-    gap: 2em;
+    width: 100%;
+
+
     margin: 1em 0;
 }
-app-image {
-    height: calc(70vh);
+
+.content {
+    padding: 2em;
+    gap: 2em;
 }
-.text{
+
+app-image {
+    max-height: calc(70vh);
+    max-width: 100%;
+}
+
+.text {
     gap: 1em;
+}
+
+.image {
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    padding: 1em;
+    color: var(--main-color);
 }

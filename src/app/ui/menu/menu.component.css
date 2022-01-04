@@ -26,11 +26,7 @@ svg {
 .burgerMenu{
     display: none;
 }
-.burger mat-icon{
-    height: auto;
-    width: auto;
-    font-size: 2.25em;
-}
+
 .notBurger{
     display: flex;
 }

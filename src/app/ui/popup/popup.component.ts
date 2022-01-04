@@ -33,8 +33,11 @@ getText():string{
     if(this.popupService.popupIsOpened){
 
       if(!this.popup.nativeElement.contains(event.target) && this.popupContainer.nativeElement.contains(event.target)) {
-        this.popupService.closePopup();
+        this.closePopup();
       }
     }
+  }
+  closePopup(){
+    this.popupService.closePopup();
   }
 }

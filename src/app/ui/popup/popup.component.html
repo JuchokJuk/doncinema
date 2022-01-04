@@ -5,17 +5,25 @@
             <div class="widthControl">
                 <div #popup class="popup column border">
 
-
-
-                    <app-image [imagePath]="getImagePath()" [cover]="false"></app-image>
-
-
-                    <div class="text column">
-                        <h2>{{getHeader()}}</h2>
-                        <p>{{getText()}}</p>
+                    <div class="image border">
+                        <div class="close iconButton alignCenter" (click)="closePopup()">
+                            <mat-icon >close</mat-icon>
+                        </div>
+                        <app-image [imagePath]="getImagePath()" [cover]="false"></app-image>
                     </div>
 
+                    <div class="content column">
 
+                        
+
+
+
+                        <div class="text column">
+                            <h2>{{getHeader()}}</h2>
+                            <p>{{getText()}}</p>
+                        </div>
+
+                    </div>
 
 
                 </div>
