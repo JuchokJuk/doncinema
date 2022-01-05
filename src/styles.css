@@ -129,6 +129,11 @@ h4 {
     max-width: 960px;
     padding: 0 1em;
 }
+@media (max-width: 800px){
+    .widthControl {
+        padding: 0;
+    }
+}
 
 .adaptiveParent {
     display: flex;

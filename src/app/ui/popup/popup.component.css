@@ -28,7 +28,11 @@
 
     margin: 1em 0;
 }
-
+@media (max-width: 800px){
+    .popup {
+        margin: 0;
+    }
+}
 .content {
     padding: 2em;
     gap: 2em;
@@ -37,9 +41,6 @@
 app-image {
     max-height: 70vh;
     max-width: 100%;
-}
-::ng-deep .image app-image .image{
-    min-height: 50vh;
 }
 
 .text {
