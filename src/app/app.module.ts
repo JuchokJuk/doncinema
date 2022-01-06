@@ -23,6 +23,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { CardComponent } from './ui/card/card.component';
 import { NoImageComponent } from './ui/no-image/no-image.component';
 import { PopupComponent } from './ui/popup/popup.component';
+import { PostComponent } from './ui/post/post.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { PopupComponent } from './ui/popup/popup.component';
     CardComponent,
     NoImageComponent,
     PopupComponent,
+    PostComponent,
   ],
   imports: [
     BrowserModule,

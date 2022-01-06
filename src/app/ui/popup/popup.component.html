@@ -4,27 +4,10 @@
         <div class="widthControlContainer">
             <div class="widthControl">
                 <div #popup class="popup column border">
-
-                    <div class="image border">
-                        <div class="close iconButton alignCenter" (click)="closePopup()">
-                            <mat-icon >close</mat-icon>
-                        </div>
-                        <app-image [imagePath]="getImagePath()" [cover]="false"></app-image>
+                    <div class="close iconButton alignCenter border" (click)="closePopup()">
+                        <mat-icon >close</mat-icon>
                     </div>
-
-                    <div class="content column">
-
-                        
-
-
-
-                        <div class="text column">
-                            <h2>{{getHeader()}}</h2>
-                            <p>{{getText()}}</p>
-                        </div>
-
-                    </div>
-
+                    <ng-content></ng-content>
 
                 </div>
             </div>

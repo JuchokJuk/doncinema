@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { PopupService } from '../popup.service';
 
 @Component({
@@ -14,15 +14,7 @@ export class PopupComponent {
     return this.popupService.popupIsOpened;
   }
 
-getImagePath():string{
-  return this.popupService.imagePath;
-}
-getHeader():string{
-  return this.popupService.header;
-}
-getText():string{
-  return this.popupService.text;
-}
+
 
 
   @ViewChild('popup', { static: false }) popup!: ElementRef;
