@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
     providedIn: 'root',
 })
 export class ModelService {
-    about!: Card;
+    about!: About;
     services!: Services;
     projects!: Projects;
     partners!: Partners;
@@ -13,9 +13,17 @@ export class ModelService {
     constructor() {
 
         this.about = {
-            title: "Чем мы занимаемся?",
-            description: "Приоритетные направления — продюсирование, прокат и продвижение собственных и партнерских кинопроектов, а также продакшн сервис на территории России. Мы предлагаем полный цикл услуг по организации съемочного процесса и постпродакшна для проектов любого масштаба и бюджета.",
-            imagePath: ""
+            companyName: 'КИНО​КОМПАНИЯ ДОН​СИНЕМА',
+            about: {
+                title: "Чем мы занимаемся?",
+                description: "Приоритетные направления — продюсирование, прокат и продвижение собственных и партнерских кинопроектов, а также продакшн сервис на территории России. Мы предлагаем полный цикл услуг по организации съемочного процесса и постпродакшна для проектов любого масштаба и бюджета.",
+                imagePath: ""
+            },
+            callToAction: {
+                title: "Свяжитесь с нами",
+                description: "Оставьте нам свой телефон и мы вам позвоним",
+                imagePath: ""
+            }
         }
 
         this.services = {
@@ -72,7 +80,7 @@ export class ModelService {
                         {
                             title: "Аренда костюмов и реквизита",
                             description: "Предоставим костюмы и реквизиты",
-                            imagePath: ""
+                            imagePath: "https://www.mosfilm.ru/upload/iblock/fb2/fb21d8da554c53a67bddb4967e132d4d.jpg"
                         }
                     ]
                 },
@@ -86,18 +94,18 @@ export class ModelService {
                         },
                         {
                             title: "Палатки",
-                            description: "Добавить текст. Добавить текст. Добавить текст. Добавить текст. Добавить текст. Добавить текст. Добавить текст. Добавить текст. Добавить текст. Добавить текст. Добавить текст.",
-                            imagePath: ""
+                            description: "Предоставитм палатки",
+                            imagePath: "https://img.promportal.su/foto/good_fotos/46844/468442539/kino-palatka-3h3_foto_largest.jpg"
                         },
                         {
                             title: "Столы, стулья",
-                            description: "Добавить текст. Добавить текст. Добавить текст. Добавить текст. Добавить текст. Добавить текст. Добавить текст. Добавить текст. Добавить текст. Добавить текст. Добавить текст.",
-                            imagePath: ""
+                            description: "Предоставим столы и стулья",
+                            imagePath: "https://shalash.by/foldsets/images/products/78/stol-skladnoj-beseda-o150sm01.jpg"
                         },
                         {
                             title: "Прочее",
-                            description: "Добавить текст. Добавить текст. Добавить текст. Добавить текст. Добавить текст. Добавить текст. Добавить текст. Добавить текст. Добавить текст. Добавить текст. Добавить текст.",
-                            imagePath: ""
+                            description: "Найдём всё что вам нужно",
+                            imagePath: "https://yt3.ggpht.com/ytc/AKedOLRfDmdb38qoIQWFY-S16_JtJk2CkZHG98Bjdhk6Sw=s900-c-k-c0x00ffffff-no-rj"
                         }
                     ]
                 }
@@ -195,7 +203,11 @@ export class ModelService {
 }
 
 
-
+export interface About {
+    companyName: string;
+    about: Card;
+    callToAction: Card;
+}
 export interface Services {
     title: string;
     categories: Category[];

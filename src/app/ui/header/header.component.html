@@ -5,7 +5,7 @@
             <div class="graphicsAndHeader border">
                 <div class="column header">
                     <app-diagonal></app-diagonal>
-                    <h1>КИНО​КОМПАНИЯ<br> ДОН​СИНЕМА</h1>
+                    <h1>{{about.companyName}}</h1>
 
                     <div class="row spaceBetween flexEnd numberAndGraphic">
                         <b>0</b>
@@ -32,16 +32,12 @@
             </div>
             <div class="adaptiveParent">
                 <app-block class="adaptiveChild" [number]="'1'">
-                    <h2>Чем мы занимаемся?</h2>
-                    <p>Приоритетные направления — продюсирование, прокат и продвижение собственных и
-                        партнерских кинопроектов, а также продакшн сервис на территории России. Мы предлагаем
-                        полный цикл услуг по организации съемочного процесса и постпродакшна для проектов любого
-                        масштаба и бюджета.</p>
+                    <h2>{{about.about.title}}</h2>
+                    <p>{{about.about.description}}</p>
                 </app-block>
                 <app-block class="adaptiveChild" [number]="'2'" [button]="'заказать звонок'">
-                    <h2>Заголовок</h2>
-                    <p>Какой-то текст. Текст который достаточно длинный и его немного дольше читать, ну в общем-то
-                        больше сказать нечего, этот текст закончится где-то здесь.</p>
+                    <h2>{{about.callToAction.title}}</h2>
+                    <p>{{about.callToAction.description}}</p>
                 </app-block>
             </div>
         </div>
