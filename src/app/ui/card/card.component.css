@@ -8,6 +8,7 @@
 }
 .textAndButton{
     gap: 2.5em;
+    height: 100%;
 }
 .text {
     width: 14em;

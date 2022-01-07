@@ -22,8 +22,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { CardComponent } from './ui/card/card.component';
 import { NoImageComponent } from './ui/no-image/no-image.component';
-import { PopupComponent } from './ui/popup/popup.component';
-import { PostComponent } from './ui/post/post.component';
+import { PopupComponent } from './ui/popup/popup/popup.component';
+import { PostComponent } from './ui/popup/popup-content/post/post.component';
+import { CallFormComponent } from './ui/popup/popup-content/call-form/call-form.component';
+import { StarComponent } from './ui/star/star.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +49,8 @@ import { PostComponent } from './ui/post/post.component';
     NoImageComponent,
     PopupComponent,
     PostComponent,
+    CallFormComponent,
+    StarComponent,
   ],
   imports: [
     BrowserModule,

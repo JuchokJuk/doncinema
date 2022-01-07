@@ -1,5 +1,5 @@
 import { Component, ViewChild, ViewContainerRef } from '@angular/core';
-import { PopupService } from './ui/popup.service';
+import { PopupService } from './ui/popup/popup.service';
 
 @Component({
   selector: 'app-root',

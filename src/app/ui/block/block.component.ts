@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./block.component.css']
 })
 export class BlockComponent {
-  @Input() number!: string;
   @Input() button!: string;
+  @Input() callback!: () => void;
 }

@@ -97,10 +97,13 @@ h4 {
     display: flex;
     justify-content: space-between;
 }
-
-.flexEnd {
+.alignItemsEnd{
     display: flex;
     align-items: flex-end;
+}
+.justifyContentEnd {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .alignCenter {

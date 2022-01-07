@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
-import { PopupService } from '../popup.service';
+import { PopupService } from '../popup/popup.service';
 
-import { PostComponent } from '../post/post.component';
+import { PostComponent } from '../popup/popup-content/post/post.component';
 
 @Component({
   selector: 'app-card',

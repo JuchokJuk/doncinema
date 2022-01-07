@@ -4,9 +4,9 @@
         <div class="text column">
             <ng-content></ng-content>
         </div>
-        <div class="row spaceBetween" *ngIf="number || button">
-            <b *ngIf="number">{{number}}</b>
-            <span class="button" *ngIf="button">{{button}}</span>
+        <div class="row spaceBetween" *ngIf="button">
+            <app-star></app-star>
+            <span class="button" (click)="callback()" >{{button}}</span>
         </div>
     </div>
 
