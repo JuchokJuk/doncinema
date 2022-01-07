@@ -3,10 +3,12 @@
         <app-headline [header]="contacts.title"></app-headline>
         <div class="adaptiveParent border">
             <app-block *ngFor="let contactType of contacts.contactTypes" class="adaptiveChild">
-                <h4>{{contactType.title}}</h4>
-                <ul>
-                    <li *ngFor="let item of contactType.contacts ">{{item}}</li>
-                </ul>
+                <div class="text column">
+                    <h4>{{contactType.title}}</h4>
+                    <ul>
+                        <li *ngFor="let item of contactType.contacts ">{{item}}</li>
+                    </ul>
+                </div>
             </app-block>
             <div class="map">
                 <iframe src="https://59wr1.csb.app/" loading="lazy"></iframe>

@@ -1,4 +1,4 @@
-<div class="block border">
+<div class="block border material">
 
     <div class="textAndButton column spaceBetween">
         <div class="text column">
@@ -6,7 +6,7 @@
         </div>
         <div class="row spaceBetween" *ngIf="button">
             <app-star></app-star>
-            <span class="button" (click)="callback()" >{{button}}</span>
+            <app-button (click)="callback()">{{button}}</app-button>
         </div>
     </div>
 

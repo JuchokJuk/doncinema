@@ -21,11 +21,11 @@
                 </svg>
                 <div class="row alignCenter">
                     <div class="notBurger row alignCenter">
-                        <span class="button">О компании</span>
-                        <span class="button">Услуги</span>
-                        <span class="button">Проекты</span>
-                        <span class="button">Партнёры</span>
-                        <span class="button">Контакты</span>
+                        <app-button>О компании</app-button>
+                        <app-button>Услуги</app-button>
+                        <app-button>Проекты</app-button>
+                        <app-button>Партнёры</app-button>
+                        <app-button>Контакты</app-button>
                     </div>
 
                     <div class="iconButton burger alignCenter" (click)="toggleBurgerMenu()">
@@ -40,11 +40,11 @@
     <div class="widthControlContainer border">
         <div class="widthControl">
             <div class="burgerMenu column border" [ngClass]="{'opened': menuIsOpened}">
-                <span class="button border">О компании</span>
-                <span class="button border">Услуги</span>
-                <span class="button border">Проекты</span>
-                <span class="button border">Партнёры</span>
-                <span class="button border">Контакты</span>
+                <app-button class="border">О компании</app-button>
+                <app-button class="border">Услуги</app-button>
+                <app-button class="border">Проекты</app-button>
+                <app-button class="border">Партнёры</app-button>
+                <app-button class="border">Контакты</app-button>
             </div>
         </div>
     </div>

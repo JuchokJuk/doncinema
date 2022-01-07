@@ -22,8 +22,7 @@ img {
     object-fit: contain;
 
     display: block;
-    /* z-index:-1; */
-    filter: grayscale(100%) contrast(1);
+    filter: grayscale(100%);
     mix-blend-mode: var(--bg-blend);
     position: relative;
 }

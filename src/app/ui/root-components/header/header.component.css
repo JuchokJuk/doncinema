@@ -34,6 +34,9 @@ svg {
     display: flex;
     flex-direction: row;
 }
+.text {
+    gap: 1em;
+}
 
 @media(max-width: 960px) {
     .header{
@@ -57,4 +60,7 @@ svg {
     .numberAndGraphic{
         display: none;
     }
+}
+.caterpillar{
+    fill: var(--main-medium-contrast-color);
 }
