@@ -2,7 +2,6 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--main-color) var(--noise);
     z-index: 2;
 }
 

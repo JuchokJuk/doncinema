@@ -1,4 +1,4 @@
-import { Component, ComponentFactoryResolver, ComponentRef, Input, Type, ViewContainerRef } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { PopupService } from '../popup.service';
 
 import { PostComponent } from '../post/post.component';
@@ -8,36 +8,28 @@ import { PostComponent } from '../post/post.component';
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css']
 })
-export class CardComponent  {
-  constructor(private popupService: PopupService, private componentFactoryResolver: ComponentFactoryResolver) { }
-  @Input() imagePath!:string;
-  @Input() header!:string;
+export class CardComponent {
+  constructor(private popupService: PopupService) { }
+
+  @Input() imagePath!: string;
+  @Input() header!: string;
   @Input() text!: string;
-  showPopup(){
-    this.popupService.openPopup();
 
-    let component = PostComponent;
-    this.addComponent(component);
+  showPopup() {
+    const inputs = [
+      {
+        name: 'imagePath',
+        value: this.imagePath
+      },
+      {
+        name: 'header',
+        value: this.header
+      },
+      {
+        name: 'text',
+        value: this.text
+      }
+    ];
+    this.popupService.openPopup(PostComponent, inputs);
   }
-
-  // container:ViewContainerRef = this.popupService.popupContentContainer;
-
-
-  // Keep track of list of generated components for removal purposes
-  // components = [];
-
-  // Expose class so that it can be used in the template
-  
-
-
-  addComponent(componentClass: Type<any>) {
-    // Create component dynamically inside the ng-template
-     const componentFactory = this.componentFactoryResolver.resolveComponentFactory(componentClass);
-    const component = this.popupService.getPopupContentContainer().createComponent(componentFactory);
-     
-
-    // Push the component so that we can keep track of which components are created
-    // this.components.push(component);
-  }
-
 }

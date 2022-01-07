@@ -23,7 +23,6 @@
 }
 
 .popup {
-    background: var(--main-color) var(--noise);
     width: 100%;
     min-height: 4.5em;
 

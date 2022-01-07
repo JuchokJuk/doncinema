@@ -29,7 +29,7 @@
     --accent-color-transparent: #CE949680;
     --accent-coplementary-color-transparent: #9972A080;
 
-    --noise: url(./assets/blackNoise.png);
+    --noise: url(./assets/blackNoise5.png);
 
     /* duotone */
     --base: var(--accent-color);
@@ -74,7 +74,9 @@ h4 {
     font-size: clamp(12px, 10.6667px + 0.5556vw, 16px);
 }
 
-
+.material{
+    background: var(--main-color) var(--noise);
+}
 
 .row {
     display: flex;

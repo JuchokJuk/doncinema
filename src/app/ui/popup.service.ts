@@ -1,4 +1,4 @@
-import { ElementRef, Injectable, ViewContainerRef } from '@angular/core';
+import { ComponentFactoryResolver, Injectable, ViewContainerRef } from '@angular/core';
 
 @Injectable({
     providedIn: 'root',
@@ -6,9 +6,19 @@ import { ElementRef, Injectable, ViewContainerRef } from '@angular/core';
 export class PopupService {
     popupIsOpened: boolean = false;
     popupContentContainer!: ViewContainerRef;
-    openPopup() {
+    constructor(private componentFactoryResolver: ComponentFactoryResolver){}
+    openPopup(componentClass:any, inputs:any) {
         this.popupIsOpened = true;
         (document.body as HTMLElement).style.overflow = 'hidden';
+
+        const componentFactory = this.componentFactoryResolver.resolveComponentFactory(componentClass);
+    
+        this.popupContentContainer.clear();
+        const component = this.popupContentContainer.createComponent<typeof componentClass>(componentFactory);
+
+        for(let i = 0; i < inputs.length; i++){
+            component.instance[inputs[i].name] = inputs[i].value;
+        }
     }
     closePopup() {
         this.popupIsOpened = false;
