@@ -37,7 +37,11 @@ svg {
 .text {
     gap: 1em;
 }
-
+.textAndButton {
+    gap: 4em;
+    padding: 2em;
+    height: 100%;
+}
 @media(max-width: 960px) {
     .header{
         padding-top: 2em;
