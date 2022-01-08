@@ -218,27 +218,27 @@ interface Block {
     content: any;
 }
 
-export interface About {
-    companyName: string;
-    about: Card;
-    callToAction: Card;
-}
+// export interface About {
+//     companyName: string;
+//     about: Card;
+//     callToAction: Card;
+// }
 export interface Services {
     title: string;
     categories: Category[];
 }
-export interface Projects {
-    title: string;
-    films: Card[];
-}
-export interface Partners {
-    title: string;
-    partners: Partner[];
-}
-export interface Contacts {
-    title: string;
-    contactTypes: ContactType[];
-}
+// export interface Projects {
+//     title: string;
+//     films: Card[];
+// }
+// export interface Partners {
+//     title: string;
+//     partners: Partner[];
+// }
+// export interface Contacts {
+//     title: string;
+//     contactTypes: ContactType[];
+// }
 
 export interface Card {
     title: string;
@@ -249,11 +249,11 @@ interface Category {
     title: string;
     cards: Card[];
 }
-interface Partner {
-    name: string;
-    logoImagePath: string;
-}
-interface ContactType {
-    title: string;
-    contacts: string[];
-}
+// interface Partner {
+//     name: string;
+//     logoImagePath: string;
+// }
+// interface ContactType {
+//     title: string;
+//     contacts: string[];
+// }

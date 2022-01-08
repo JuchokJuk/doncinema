@@ -2,7 +2,7 @@
     <div class="widthControl">
         <app-headline [header]="contacts.title"></app-headline>
         <div class="adaptiveParent border">
-            <app-block *ngFor="let contactType of contacts.contactTypes" class="adaptiveChild">
+            <app-block *ngFor="let contactType of contacts.content.contactTypes" class="adaptiveChild">
                 <div class="text column">
                     <h4>{{contactType.title}}</h4>
                     <ul>

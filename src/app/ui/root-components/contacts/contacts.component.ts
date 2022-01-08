@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { ModelService, Contacts } from 'src/app/model/model.service';
+import { Component } from '@angular/core';
+import { ModelService} from 'src/app/model/model.service';
 
 @Component({
   selector: 'app-contacts',
@@ -9,5 +9,5 @@ import { ModelService, Contacts } from 'src/app/model/model.service';
 export class ContactsComponent {
 
   constructor(private modelService: ModelService) {}
-  contacts:Contacts = this.modelService.contacts.content;
+  contacts = this.modelService.contacts;
 }

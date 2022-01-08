@@ -5,7 +5,7 @@
             <div class="graphicsAndHeader material border">
                 <div class="column header ">
                     <app-diagonal></app-diagonal>
-                    <h1>{{about.companyName}}</h1>
+                    <h1>{{about.content.companyName}}</h1>
 
                     <div class="row spaceBetween alignItemsEnd numberAndGraphic">
                         <app-star></app-star>
@@ -33,14 +33,14 @@
             <div class="adaptiveParent">
                 <app-block class="adaptiveChild">
                     <div class="text column">
-                        <h2>{{about.about.title}}</h2>
-                        <p>{{about.about.description}}</p>
+                        <h2>{{about.content.about.title}}</h2>
+                        <p>{{about.content.about.description}}</p>
                     </div>
                 </app-block>
                 <app-block class="adaptiveChild" [button]="'заказать звонок'" [callback]="openCallForm">
                     <div class="text column">
-                        <h2>{{about.callToAction.title}}</h2>
-                        <p>{{about.callToAction.description}}</p>
+                        <h2>{{about.content.callToAction.title}}</h2>
+                        <p>{{about.content.callToAction.description}}</p>
                     </div>
                 </app-block>
             </div>
