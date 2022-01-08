@@ -9,7 +9,7 @@ import { ModelService, Projects } from 'src/app/model/model.service';
 export class ProjectsComponent implements OnInit {
 
   constructor(private modelService: ModelService) {}
-  projects:Projects = this.modelService.projects;
+  projects:Projects = this.modelService.projects.content;
 
 
   ngOnInit(): void {

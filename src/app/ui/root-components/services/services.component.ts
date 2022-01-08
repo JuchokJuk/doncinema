@@ -8,7 +8,7 @@ import { ModelService, Services } from 'src/app/model/model.service';
 })
 export class ServicesComponent implements OnInit {
   constructor(private modelService: ModelService) {}
-  services:Services = this.modelService.services;
+  services:Services = this.modelService.services.content;
 
 
   ngOnInit(): void {

@@ -24,19 +24,19 @@
     --main-medium-contrast-color: #00000033;
     --main-contrast-color: #ffffffcc;
 
-    --accent-color: #005f73;
-    --accent-coplementary-color: #9b2226;
+    --accent-color: #106EBE;
+    --accent-coplementary-color: #be1075;
 
-    --accent-color-transparent: #005f7380;
-    --accent-coplementary-color-transparent: #9b222680;
+    --accent-color-transparent: #106EBE80;
+    --accent-coplementary-color-transparent: #be107580;
 
     --noise: url(./assets/blackNoise5.png);
 
     /* duotone */
-    --base: var(--accent-coplementary-color);
+    --base: var(--accent-color);
     --bg-blend: multiply;
     --fg-blend: lighten;
-    --foreground: #013641;
+    --foreground: #460029;
 }
 
 * {
@@ -161,4 +161,7 @@ mat-icon{
 }
 .iconButton{
     cursor: pointer;
+}
+.borderRadius{
+    border-radius: 0.25em;
 }

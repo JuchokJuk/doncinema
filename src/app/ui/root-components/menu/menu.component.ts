@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -6,6 +6,12 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent {
+  @Input() blocks:any;
+
+  scrollTo(el: any) {
+    console.log(el)
+    el.nativeElement.scrollIntoView({behavior: 'smooth'});
+  }
   menuIsOpened: boolean = false;
   toggleBurgerMenu() {
     if (this.menuIsOpened === false) {

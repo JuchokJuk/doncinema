@@ -10,8 +10,13 @@
 }
 
 ::ng-deep .selected {
-    background: var(--accent-color) var(--noise);
+    background: var(--accent-color);
+
+    box-shadow: 
+    0px 0px 0px 0.5px var(--main-medium-contrast-color), 0px 0px 0px 0.5px var(--main-medium-contrast-color) inset,
+    0px 4px 16px 0px #005f7380;
 }
+
 
 ::ng-deep .tabsContainer .swiperContainer {
     height: 100%;

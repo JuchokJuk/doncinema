@@ -1,9 +1,16 @@
 .button {
     cursor: pointer;
     display: block;
-    text-align: center;
+    font-weight: 600;
 }
 .accent{
     background: var(--accent-color);
     padding: 1em 1.5em;
+
+    box-shadow: 
+    0px 0px 0px 0.5px var(--main-medium-contrast-color), 0px 0px 0px 0.5px var(--main-medium-contrast-color) inset,
+    0px 4px 16px 0px #106EBE80;
+
+    
+    text-align: center;
 }

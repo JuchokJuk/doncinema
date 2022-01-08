@@ -21,11 +21,7 @@
                 </svg>
                 <div class="row alignCenter">
                     <div class="notBurger row alignCenter">
-                        <app-button>О компании</app-button>
-                        <app-button>Услуги</app-button>
-                        <app-button>Проекты</app-button>
-                        <app-button>Партнёры</app-button>
-                        <app-button>Контакты</app-button>
+                        <app-button *ngFor="let block of blocks" (click)="scrollTo(block.element)">{{block.title}}</app-button>
                     </div>
 
                     <div class="iconButton burger alignCenter" (click)="toggleBurgerMenu()">
@@ -40,11 +36,8 @@
     <div class="widthControlContainer border">
         <div class="widthControl">
             <div class="burgerMenu column border" [ngClass]="{'opened': menuIsOpened}">
-                <app-button class="border">О компании</app-button>
-                <app-button class="border">Услуги</app-button>
-                <app-button class="border">Проекты</app-button>
-                <app-button class="border">Партнёры</app-button>
-                <app-button class="border">Контакты</app-button>
+                <app-button class="border" *ngFor="let block of blocks" (click)="scrollTo(block.element)">{{block.title}}</app-button>
+
             </div>
         </div>
     </div>

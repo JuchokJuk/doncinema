@@ -9,5 +9,5 @@ import { ModelService, Contacts } from 'src/app/model/model.service';
 export class ContactsComponent {
 
   constructor(private modelService: ModelService) {}
-  contacts:Contacts = this.modelService.contacts;
+  contacts:Contacts = this.modelService.contacts.content;
 }

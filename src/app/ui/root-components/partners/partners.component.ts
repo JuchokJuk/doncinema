@@ -8,5 +8,5 @@ import { ModelService, Partners } from 'src/app/model/model.service';
 })
 export class PartnersComponent {
   constructor(private modelService: ModelService) {}
-  partners:Partners = this.modelService.partners;
+  partners:Partners = this.modelService.partners.content;
 }

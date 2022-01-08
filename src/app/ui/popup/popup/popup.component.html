@@ -1,14 +1,16 @@
 <div *ngIf="isPopupOpened()" #popupContainer>
     <div class="back"></div>
-    <div class="popupContainer">
-        <div class="widthControlContainer">
-            <div class="widthControl">
-                <div #popup class="popup column border material">
-                    <div class="close iconButton alignCenter border" (click)="closePopup()">
-                        <mat-icon >close</mat-icon>
-                    </div>
-                    <ng-content></ng-content>
+    <div class="popupScrollCenteredVertical">
+        <div class="popupContainer">
+            <div class="widthControlContainer">
+                <div class="widthControl">
+                    <div #popup class="popup column border material">
+                        <div class="close iconButton alignCenter border" (click)="closePopup()">
+                            <mat-icon>close</mat-icon>
+                        </div>
+                        <ng-content></ng-content>
 
+                    </div>
                 </div>
             </div>
         </div>

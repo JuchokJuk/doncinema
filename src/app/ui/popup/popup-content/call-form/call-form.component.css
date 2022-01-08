@@ -1,20 +1,12 @@
-
 .content {
     padding: 2em;
     gap: 2em;
-}
-
-app-image {
-    max-height: 70vh;
-    max-width: 100%;
 }
 
 .text {
     gap: 1em;
 }
 
-.image {
-    position: relative;
-    height: 100%;
-
+.inputAndButton{
+    gap: 1em;
 }

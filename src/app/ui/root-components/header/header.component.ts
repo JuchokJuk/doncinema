@@ -10,7 +10,7 @@ import { PopupService } from '../../popup/popup.service';
 export class HeaderComponent {
 
   constructor(private modelService: ModelService, private popupService: PopupService) { }
-  about: About = this.modelService.about;
+  about: About = this.modelService.about.content;
 
   openCallForm = () => {
     this.popupService.openPopup(CallFormComponent, []);
