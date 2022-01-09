@@ -1,7 +1,7 @@
-<div #swiperTabsNavWrapper class="border">
-    <swiper [config]="config" class="tabsNav">
+<div #swiperTabsNavWrapper class="material">
+    <swiper [config]="config" class="tabsNav border">
 
-        <ng-template swiperSlide class="border material" *ngFor="let category of services.categories">{{category.title}}
+        <ng-template swiperSlide *ngFor="let category of services.categories">{{category.title}}
         </ng-template>
 
     </swiper>

@@ -186,28 +186,26 @@ export class ModelService {
         this.contacts = {
             title: "Контакты",
             content: {
-                contactTypes: [
-                    {
-                        title: "Телефон",
-                        contacts: [
-                            "8 (929) 817-24-44",
-                            "8 (863) 279-38-09"
-                        ]
-                    },
-                    {
-                        title: "Email",
-                        contacts: [
-                            "buh@donsinema.ru"
-                        ]
-                    },
-                    {
-                        title: "Адрес",
-                        contacts: [
-                            "г. Ростов-на-Дону ул. Платона Кляты 15 офис 66",
-                            "г. Ростов-на-Дону ул. Вавилова 58 офис 309"
-                        ]
-                    }
-                ]
+                phones: {
+                    title: "Телефон",
+                    contacts: [
+                        "8 (929) 817-24-44",
+                        "8 (863) 279-38-09"
+                    ]
+                },
+                emails: {
+                    title: "Email",
+                    contacts: [
+                        "buh@donsinema.ru"
+                    ]
+                },
+                addresses: {
+                    title: "Адрес",
+                    contacts: [
+                        "г. Ростов-на-Дону ул. Платона Кляты 15 офис 66",
+                        "г. Ростов-на-Дону ул. Вавилова 58 офис 309"
+                    ]
+                }
             }
         }
 

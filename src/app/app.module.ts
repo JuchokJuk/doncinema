@@ -11,7 +11,6 @@ import { ServicesComponent } from './ui/root-components/services/services.compon
 import { HeadlineComponent } from './ui/headline/headline.component';
 import { TabsComponent } from './ui/tabs/tabs.component';
 import { SliderComponent } from './ui/slider/slider.component';
-import { DiagonalComponent } from './ui/diagonal/diagonal.component';
 import { ProjectsComponent } from './ui/root-components/projects/projects.component';
 import { ImageComponent } from './ui/image/image.component';
 import { PartnersComponent } from './ui/root-components/partners/partners.component';
@@ -39,7 +38,6 @@ import { ButtonComponent } from './ui/button/button.component';
     HeadlineComponent,
     TabsComponent,
     SliderComponent,
-    DiagonalComponent,
     ProjectsComponent,
     ImageComponent,
     PartnersComponent,

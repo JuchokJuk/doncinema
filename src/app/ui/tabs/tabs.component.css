@@ -3,7 +3,7 @@
     text-align: center;
     padding: 1em;
     white-space: nowrap;
-    
+
     color: var(--main-contrast-color);
 }
 
@@ -12,11 +12,25 @@
 }
 
 ::ng-deep .selected {
+    position: relative;
+}
+
+::ng-deep .selected::after {
+    content: '';
+
+
+    position: absolute;
+    bottom: 0.25em;
+    left: 0.75em;
+    right: 0.75em;
+    height: 0.25em;
+    border-radius: 0.125em;
+
     background: var(--accent-color);
 
-    box-shadow: 
-    0px 0px 0px 0.5px var(--main-medium-contrast-color), 0px 0px 0px 0.5px var(--main-medium-contrast-color) inset,
-    0px 4px 16px 0px #005f7380;
+    box-shadow:
+        0px 0px 0px 0.5px var(--main-medium-contrast-color), 0px 0px 0px 0.5px var(--main-medium-contrast-color) inset,
+        0px 4px 16px 0px #005f7380;
 }
 
 

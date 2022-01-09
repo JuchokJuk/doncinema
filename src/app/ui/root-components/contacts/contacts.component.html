@@ -2,14 +2,38 @@
     <div class="widthControl">
         <app-headline [header]="contacts.title"></app-headline>
         <div class="adaptiveParent border">
-            <app-block *ngFor="let contactType of contacts.content.contactTypes" class="adaptiveChild">
+
+
+
+            <app-block class="adaptiveChild">
                 <div class="text column">
-                    <h4>{{contactType.title}}</h4>
+                    <h4>{{contacts.content.phones.title}}</h4>
                     <ul>
-                        <li *ngFor="let item of contactType.contacts ">{{item}}</li>
+                        <li *ngFor="let item of contacts.content.phones.contacts"><a href="phoneTo:{{item}}">{{item}}</a></li>
                     </ul>
                 </div>
             </app-block>
+
+            <app-block class="adaptiveChild">
+                <div class="text column">
+                    <h4>{{contacts.content.emails.title}}</h4>
+                    <ul>
+                        <li *ngFor="let item of contacts.content.emails.contacts"><a href="mailTo:{{item}}">{{item}}</a></li>
+                    </ul>
+                </div>
+            </app-block>
+
+            <app-block class="adaptiveChild">
+                <div class="text column">
+                    <h4>{{contacts.content.addresses.title}}</h4>
+                    <ul>
+                        <li *ngFor="let item of contacts.content.addresses.contacts">{{item}}</li>
+                    </ul>
+                </div>
+            </app-block>
+
+
+
             <div class="map">
                 <iframe src="https://59wr1.csb.app/" loading="lazy"></iframe>
             </div>

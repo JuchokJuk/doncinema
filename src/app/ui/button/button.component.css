@@ -1,19 +1,19 @@
 .button {
     cursor: pointer;
     display: block;
-    
+
     color: var(--main-contrast-color);
 }
-.accent{
-    
+
+.accent {
+
     font-weight: 500;
     background: var(--accent-color);
-    padding: 1em 1.5em;
 
-    
+
+
     text-align: center;
 
-    font-family: 'NueMachina';
     color: var(--main-contrast-color);
 
     padding: 1em 1.5em;
@@ -23,12 +23,39 @@
     transition: 200ms ease;
     /* border-color: var(--main-medium-contrast-color); */
 
-    box-shadow: 0px 4px 8px 0px #04254433, 0px 4px 16px 0px #106EBE80, inset 0 1.5px 0 0 rgb(255 255 255 / 20%);
+    box-shadow: var(--shadow), var(--glow), var(--light);
 
 }
 
+.main {
+
+    color: var(--main-contrast-color);
+
+    background: var(--main-lighten-transparent-color);
+    padding: 1em 1.5em;
+    border-radius: 0.4em;
+    border: 2px solid transparent;
+    font-weight: 400;
+    transition: 200ms ease;
+    border-color: var(--main-medium-contrast-color);
+
+    box-shadow: var(--shadow), var(--light);
+}
+
+.main:hover {
+    box-shadow: var(--hover-outline), var(--light);
+}
+
+.main:active {
+    transform: scale(0.95);
+}
+
+.icon{
+    padding: 0.5em;
+}
+
 .accent:hover {
-    box-shadow: 0 0 0 4px #106EBE40,  0px 4px 8px 0px #04254433, 0px 4px 16px 0px #106EBE80, inset 0 1.5px 0 0 rgb(255 255 255 / 20%);
+    box-shadow: var(--shadow), var(--glow), var(--light), 0 0 0 4px #106EBE40;
 }
 
 .accent:active {

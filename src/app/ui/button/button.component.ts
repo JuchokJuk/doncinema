@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./button.component.css']
 })
 export class ButtonComponent {
-  @Input() accent!:boolean;
+  @Input() class!:string;
 }

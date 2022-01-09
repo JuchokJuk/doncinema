@@ -6,7 +6,7 @@
         </div>
         <div class="row spaceBetween alignItemsEnd" *ngIf="button">
             <app-star></app-star>
-            <app-button (click)="callback()" [accent]="true">{{button}}</app-button>
+            <app-button (click)="callback()" [class]="'accent'">{{button}}</app-button>
         </div>
     </div>
 

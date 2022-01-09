@@ -1,14 +1,3 @@
-*::-webkit-scrollbar {
-    width: 1em;
-}
-
-*::-webkit-scrollbar-track {}
-
-*::-webkit-scrollbar-thumb {
-    background-color: #5c5c5c;
-    border: 5px solid #00000080;
-}
-
 @font-face {
     font-family: NueMachina;
     src: url("assets/neueMachina/NeueMachina-Light.otf") format("opentype");
@@ -49,6 +38,15 @@
     --bg-blend: multiply;
     --fg-blend: lighten;
     --foreground: #460029;
+
+
+    --shadow: 0px 4px 8px 0px #00000033;
+    --light: inset 0 1.5px 0 0 #ffffff33;
+    --glow: 0px 4px 16px 0px #106EBE80;
+    --hover-outline: 0 0 0 4px #106EBE40;
+    --focus-outline: 0 0 0 4px #106EBE80;
+
+    --main-lighten-transparent-color: #3a3a3a;
 }
 
 * {
@@ -97,6 +95,10 @@ h4 {
 .material {
     background: var(--main-color-transparent) var(--noise);
     backdrop-filter: blur(4em);
+
+
+
+
 }
 
 .row {
@@ -197,25 +199,29 @@ mat-icon {
 
 input {
 
-    font-family: 'NueMachina';
+    font-family: 'Inter';
     color: var(--main-contrast-color);
 
     background: #3a3a3a;
     padding: 1em 1.5em;
-    border-radius: 0.25em;
+    border-radius: 0.4em;
     border: 2px solid transparent;
     font-weight: 400;
     transition: 200ms ease;
     border-color: var(--main-medium-contrast-color);
 
-    box-shadow: 0px 0px 0px 1px var(--main-medium-contrast-color);
+    box-shadow: var(--shadow), var(--light);
 }
 
 input:hover {
-    box-shadow: 0 0 0 4px #106EBE40;
+    box-shadow: var(--hover-outline), var(--light);
 }
 
 input:focus {
     border-color: var(--accent-color);
-    box-shadow: 0 0 0 4px #106EBE80;
+    box-shadow: var(--focus-outline);
+}
+
+a{
+    color: var(--main-contrast-color-transparent);
 }

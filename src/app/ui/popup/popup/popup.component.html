@@ -5,8 +5,12 @@
             <div class="widthControlContainer">
                 <div class="widthControl">
                     <div #popup class="popup column border material">
-                        <div class="close iconButton alignCenter border" (click)="closePopup()">
-                            <mat-icon>close</mat-icon>
+                        <div class="close">
+                            <app-button [class]="'icon'" (click)="closePopup()" >
+                                <div class=" iconButton alignCenter">
+                                    <mat-icon>close</mat-icon>
+                                </div>
+                            </app-button>
                         </div>
                         <ng-content></ng-content>
 

@@ -47,8 +47,5 @@
     right: 0;
     z-index: 999;
     margin: 1em;
-    padding: 0.5em;
     color: var(--main-contrast-color);
-    
-    background: var(--main-color) var(--noise);
 }
