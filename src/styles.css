@@ -1,3 +1,14 @@
+*::-webkit-scrollbar {
+    width: 1em;
+}
+
+*::-webkit-scrollbar-track {}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #5c5c5c;
+    border: 5px solid #00000080;
+}
+
 @font-face {
     font-family: NueMachina;
     src: url("assets/neueMachina/NeueMachina-Light.otf") format("opentype");
@@ -23,6 +34,7 @@
     --main-low-contrast-color: #0000001a;
     --main-medium-contrast-color: #00000033;
     --main-contrast-color: #ffffffcc;
+    --main-contrast-color-transparent: #ffffff80;
 
     --accent-color: #106EBE;
     --accent-coplementary-color: #be1075;
@@ -54,9 +66,15 @@ body {
 }
 
 body {
+    font-family: 'Inter', sans-serif;
+    color: var(--main-contrast-color-transparent);
+    font-size: clamp(12px, 10.6667px + 0.5556vw, 16px);
+}
+
+h1, h2, h3, h4 {
+
     font-family: 'NueMachina';
     color: var(--main-contrast-color);
-    font-size: clamp(12px, 10.6667px + 0.5556vw, 16px);
 }
 
 h1 {
@@ -175,9 +193,10 @@ mat-icon {
 
 *:focus {
     outline: none;
-  }
+}
+
 input {
-    
+
     font-family: 'NueMachina';
     color: var(--main-contrast-color);
 

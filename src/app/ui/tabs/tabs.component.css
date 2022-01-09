@@ -3,6 +3,8 @@
     text-align: center;
     padding: 1em;
     white-space: nowrap;
+    
+    color: var(--main-contrast-color);
 }
 
 ::ng-deep .tabsContainer .swiper-slide {
