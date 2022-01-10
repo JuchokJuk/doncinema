@@ -21,3 +21,6 @@ h4{
     align-items: center;
     gap: 1em;
 }
+mat-icon{
+    font-size: 1.3em;
+}
