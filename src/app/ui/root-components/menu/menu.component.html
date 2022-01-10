@@ -36,7 +36,7 @@
     <div class="widthControlContainer border">
         <div class="widthControl">
             <div class="burgerMenu column border" [ngClass]="{'opened': menuIsOpened}">
-                <app-button class="border" *ngFor="let block of blocks" (click)="scrollTo(block.element)">{{block.title}}</app-button>
+                <app-button *ngFor="let block of blocks" (click)="scrollTo(block.element)">{{block.title}}</app-button>
 
             </div>
         </div>

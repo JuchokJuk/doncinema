@@ -40,8 +40,8 @@
     --foreground: #460029;
 
 
-    --shadow: 0px 4px 8px 0px #00000000;/*33*/
-    --light: inset 0 1.5px 0 0 #ffffff00; /*33*/
+    --shadow: 0px 4px 8px 0px #00000033;/*33*/
+    --light: inset 0 1.5px 0 0 #ffffff33; /*33*/
     --glow: 0px 4px 16px 0px #106EBE80;
     --hover-outline: 0 0 0 4px #106EBE40;
     --focus-outline: 0 0 0 4px #106EBE80;
@@ -212,11 +212,11 @@ input {
     transition: 200ms ease;
     border-color: var(--main-medium-contrast-color);
 
-    box-shadow: var(--shadow), var(--light);
+    box-shadow: var(--shadow);
 }
 
 input:hover {
-    box-shadow: var(--hover-outline), var(--light);
+    box-shadow: var(--hover-outline);
 }
 
 input:focus {

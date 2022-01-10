@@ -26,7 +26,6 @@ import { PostComponent } from './ui/popup/popup-content/post/post.component';
 import { CallFormComponent } from './ui/popup/popup-content/call-form/call-form.component';
 import { StarComponent } from './ui/star/star.component';
 import { ButtonComponent } from './ui/button/button.component';
-import { MatRippleModule } from '@angular/material/core';
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,8 +55,7 @@ import { MatRippleModule } from '@angular/material/core';
     BrowserModule,
     SwiperModule,
     BrowserAnimationsModule,
-    MatIconModule,
-    MatRippleModule
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

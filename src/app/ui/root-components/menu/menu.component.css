@@ -11,9 +11,7 @@
     flex-shrink: 0;
 }
 
-app-button {
-    padding: 1em;
-}
+
 
 svg {
     fill: var(--main-contrast-color);
