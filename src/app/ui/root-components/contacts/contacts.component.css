@@ -16,3 +16,8 @@ ul{
 .text {
     gap: 1em;
 }
+h4{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}

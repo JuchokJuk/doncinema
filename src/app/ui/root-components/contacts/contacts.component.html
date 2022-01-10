@@ -7,7 +7,7 @@
 
             <app-block class="adaptiveChild">
                 <div class="text column">
-                    <h4>{{contacts.content.phones.title}}</h4>
+                    <h4>{{contacts.content.phones.title}}<mat-icon>call</mat-icon></h4>
                     <ul>
                         <li *ngFor="let item of contacts.content.phones.contacts"><a href="phoneTo:{{item}}">{{item}}</a></li>
                     </ul>
@@ -16,7 +16,7 @@
 
             <app-block class="adaptiveChild">
                 <div class="text column">
-                    <h4>{{contacts.content.emails.title}}</h4>
+                    <h4>{{contacts.content.emails.title}}<mat-icon>email</mat-icon></h4>
                     <ul>
                         <li *ngFor="let item of contacts.content.emails.contacts"><a href="mailTo:{{item}}">{{item}}</a></li>
                     </ul>
@@ -25,7 +25,7 @@
 
             <app-block class="adaptiveChild">
                 <div class="text column">
-                    <h4>{{contacts.content.addresses.title}}</h4>
+                    <h4>{{contacts.content.addresses.title}}<mat-icon>location_on</mat-icon></h4>
                     <ul>
                         <li *ngFor="let item of contacts.content.addresses.contacts">{{item}}</li>
                     </ul>
