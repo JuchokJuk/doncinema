@@ -9,7 +9,7 @@
                 <div class="text column">
                     <h4>{{contacts.content.phones.title}}<mat-icon>call</mat-icon></h4>
                     <ul>
-                        <li *ngFor="let item of contacts.content.phones.contacts"><a href="phoneTo:{{item}}">{{item}}</a></li>
+                        <li *ngFor="let item of contacts.content.phones.contacts"><a href="tel:{{item}}">{{item}}</a></li>
                     </ul>
                 </div>
             </app-block>
