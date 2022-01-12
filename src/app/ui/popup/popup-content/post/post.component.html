@@ -1,10 +1,17 @@
 <div class="image border">
-    <app-image [imagePath]="imagePath" [cover]="false"></app-image>
+
+    <app-image *ngIf="media.type === 'image'" [imagePath]="media.url" [cover]="false"></app-image>
+
+    <div class="videoContainer" [ngStyle]="{'padding-bottom': aspectRatio }">
+        <iframe *ngIf="media.type === 'video'" [src]="safeEmbededUrl" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
 </div>
 
 <div class="content column">
 
-    
+
 
 
 

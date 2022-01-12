@@ -1,8 +1,11 @@
-<div class="card border material"  (click)="showPopup()" >
+<div class="card border material" (click)="showPopup()">
 
-    <app-image [imagePath]="imagePath" [cover]="true">
-    </app-image>
-    <!-- <img src="{{imagePath}}"> -->
+
+
+    <app-image *ngIf="media.type === 'image'" [imagePath]="media.url" [cover]="true"></app-image>
+    <app-image *ngIf="media.type === 'video'" [imagePath]="'https://www.prismamarket.ru/upload/iblock/0a3/2000669800001.jpg'" [cover]="true"></app-image>
+
+
 
     <div class="column spaceBetween textAndButton">
         <div class="text">

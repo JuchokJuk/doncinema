@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { PopupService } from '../popup/popup.service';
 
 import { PostComponent } from '../popup/popup-content/post/post.component';
+import { Media } from 'src/app/model/model.service';
 
 @Component({
   selector: 'app-card',
@@ -11,15 +12,15 @@ import { PostComponent } from '../popup/popup-content/post/post.component';
 export class CardComponent {
   constructor(private popupService: PopupService) { }
 
-  @Input() imagePath!: string;
+  @Input() media!: Media;
   @Input() header!: string;
   @Input() text!: string;
 
   showPopup() {
     const inputs = [
       {
-        name: 'imagePath',
-        value: this.imagePath
+        name: 'media',
+        value: this.media
       },
       {
         name: 'header',
