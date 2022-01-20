@@ -9,9 +9,4 @@ import {Card}  from 'src/app/model/model.service';
 })
 export class SliderComponent {
   @Input() cards!: Card[];
-  config: SwiperOptions = {
-    slidesPerView: 'auto',
-    nested: true
-    };
-
 }

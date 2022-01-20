@@ -1,23 +1,22 @@
 .card {
-    gap: 2em;
-    padding: 2em;
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    cursor: pointer;
-}
-.textAndButton{
-    gap: 2.5em;
-    height: 100%;
-}
-.text {
-    width: 14em;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+
+    cursor: pointer;
 }
 
-h4 {
+
+
+.text {
+    display: flex;
+    flex-direction: column;
+    
+}
+.header{
+
+    margin-bottom: 1em;
+}
+h2 {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -32,14 +31,30 @@ p {
 }
 
 
-app-image {
+.imageContainer {
     flex-shrink: 0;
-    width: 14em;
-    height: 14em;
+
+    width: 100%;
+    padding-top: 50%;
+    border-radius: 3em;
+    position: relative;
+    margin-bottom: 2em;
+    
+    transition: 0.2s ease-in-out;
 }
 
-@media(max-width: 700px) {
-    .card {
-        flex-direction: column;
-    }
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+}
+.card:hover .imageContainer{
+    border-radius: 1em;
 }

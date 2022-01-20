@@ -1,6 +1,5 @@
 .content {
     padding: 2em;
-    gap: 2em;
 }
 
 app-image {
@@ -8,14 +7,23 @@ app-image {
     max-width: 100%;
 }
 
-.text {
-    gap: 1em;
+.header{
+    margin-bottom: 1em;
 }
 
-.image {
-    position: relative;
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+img {
+    display: block;
+    width: auto;
     height: 100%;
-
+    max-width: 100%;
+    max-height: 80vh;
+    border-radius: inherit;
 }
 
 

@@ -3,8 +3,7 @@
 }
 
 .textAndButton {
-    gap: 4em;
-    padding: 2em;
+    padding: 2em 0;
     height: 100%;
 }
 

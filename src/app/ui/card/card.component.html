@@ -1,17 +1,18 @@
-<div class="card border material" (click)="showPopup()">
+<div class="card" (click)="showPopup()" >
 
 
-
-    <app-image *ngIf="media.type === 'image'" [imagePath]="media.url" [cover]="true"></app-image>
-    <app-image *ngIf="media.type === 'video'" [imagePath]="'https://www.prismamarket.ru/upload/iblock/0a3/2000669800001.jpg'" [cover]="true"></app-image>
-
-
-
-    <div class="column spaceBetween textAndButton">
-        <div class="text">
-            <h4>{{header}}</h4>
-            <p>{{text}}</p>
-        </div>
-        <app-button [class]="'accent'">Подробнее</app-button>
+    <div class="imageContainer">
+        <img *ngIf="media.type === 'image' && media.url" src="{{media.url}}">
+        <img *ngIf="media.type === 'video' && media.url" src="../../../assets/noImage.png">
+        <img *ngIf="media.type === 'image' && !media.url" src="../../../assets/noImage.png">
     </div>
+
+
+    <div class="text">
+        <div class="header">
+            <h2>{{header}}</h2>
+        </div>
+        <p>{{text}}</p>
+    </div>
+
 </div>

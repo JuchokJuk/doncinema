@@ -1,12 +1,8 @@
-<div class="block border material" >
+<div class="block" >
 
     <div class="textAndButton column spaceBetween">
-        <div class="text column">
+        <div>
             <ng-content></ng-content>
-        </div>
-        <div class="row spaceBetween alignItemsEnd" *ngIf="button">
-            <app-star></app-star>
-            <app-button (click)="callback()" [class]="'accent'">{{button}}</app-button>
         </div>
     </div>
 

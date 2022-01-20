@@ -1,12 +1,4 @@
-<div #swiperContainer class="swiperContainer">
-    <swiper [config]="config" #swiperTabs class="cardsSlider">
-
-        <ng-template swiperSlide *ngFor="let card of cards">
-            <app-card [header]="card.title"
-                [text]="card.description"
-                [media]="card.media">
-            </app-card>
-        </ng-template>
-
-    </swiper>
+<div class="grid">
+    <app-card *ngFor="let card of cards" [header]="card.title" [text]="card.description" [media]="card.media">
+    </app-card>
 </div>

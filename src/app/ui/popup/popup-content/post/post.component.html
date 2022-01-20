@@ -1,6 +1,8 @@
 <div class="image border">
-
-    <app-image *ngIf="media.type === 'image'" [imagePath]="media.url" [cover]="false"></app-image>
+    <div class="imageContainer">
+        <img *ngIf="media.type === 'image' && media.url" src="{{media.url}}">
+        <img *ngIf="media.type === 'image' && !media.url" src="../../../assets/noImage.png">
+    </div>
 
     <div class="videoContainer" [ngStyle]="{'padding-bottom': aspectRatio }">
         <iframe *ngIf="media.type === 'video'" [src]="safeEmbededUrl" frameborder="0"
@@ -16,7 +18,9 @@
 
 
     <div class="text column">
-        <h2>{{header}}</h2>
+        <div class="header">
+            <h2>{{header}}</h2>
+        </div>
         <p>{{text}}</p>
     </div>
 

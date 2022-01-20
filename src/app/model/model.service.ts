@@ -14,150 +14,48 @@ export class ModelService {
 
         this.about = {
             title: "О нас",
+            titleBig: "О нас",
             content: {
-                companyName: 'КИНО​КОМПАНИЯ ДОН​СИНЕМА',
-                about: {
-                    title: "Чем мы занимаемся?",
-                    description: "Приоритетные направления — продюсирование, прокат и продвижение собственных и партнерских кинопроектов, а также продакшн сервис на территории России. Мы предлагаем полный цикл услуг по организации съемочного процесса и постпродакшна для проектов любого масштаба и бюджета.",
-                    media: {
-                        type: "",
-                        url: ""
-                    }
-                },
-                callToAction: {
-                    title: "Свяжитесь с нами",
-                    description: "Оставьте нам свой телефон и мы вам позвоним",
-                    media: {
-                        type: "",
-                        url: ""
-                    }
-                }
+                companyName: 'Кинокомпания Дон Синема',
+                header: 'Организуем съемки фильма в Ростове-на-Дону',
+                image: 'https://images.unsplash.com/photo-1534684686641-05569203ecca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80',
+                chips: [
+                    { icon: 'home', text: 'проживание и питание' },
+                    { icon: 'directions_car', text: 'транспорт' },
+                    { icon: 'search', text: 'поиск локаций' },
+                    { icon: 'roller_skating', text: 'аренда костюмов и реквизита' },
+                    { icon: 'inventory_2', text: 'аренда хоз. инвентаря' }
+                ]
             }
         }
 
         this.services = {
             title: "Услуги",
+            titleBig: "Как мы вам поможем?",
             content: {
-                categories: [
+                services: [
                     {
-                        title: "Транспорт",
-                        cards: [
-                            {
-                                title: "Костюмваген",
-                                description: "Мобильная костюмерная создана на базе автомобиля Газон 2021 года выпуска (габаритные размеры 7,2*2.4*2.4). Оборудована для хранения, глажения актерских костюмов, а также для переодевания актеров. Прекрасно подходит для экспедиций.",
-                                media: {
-                                    type: 'image',
-                                    url: "http://autogaz-ural.ru/wp-content/uploads/2015/09/gazon-next-evroplatforma-3-mesta.png"
-                                }
-                            },
-                            {
-                                title: "Гримваген",
-                                description: "Комфортный, просторный модуль , создана на базе автомобиля Газель 2021 года выпуска (габаритные размеры 5,2*2.2*2.4). который оборудован 3-мя рабочими местами для для трех человек, оборудовано зеркалами, индивидуальным освещением, раковиной для мытья головы и диваном для ожидающих своей очереди актёров. Наши специалисты не забыли и о комфорте: фургон-костюмерка был утеплён. Также установлен кондиционер и автономный отопитель.",
-                                media: {
-                                    type: 'image',
-                                    url: "https://static-sl.insales.ru/images/products/1/844/191177548/%D0%93%D0%90%D0%97_%D0%93%D0%B0%D0%B7%D0%B5%D0%BB%D1%8C_Next_2014.jpg"
-                                }
-                            },
-                            {
-                                title: "Туалет",
-                                description: "Мобильный туалетный модуль изготовлен на базе автомобиля газель. Внутренняя отделка выполнена из нержавеющей стали. Туалетные комнаты просторные.",
-                                media: {
-                                    type: 'image',
-                                    url: "https://sun9-13.userapi.com/impg/e6ifi71QjNHJX3_iwpTRxV5WPriTeT0gPP8ccg/qLV_w9ThREs.jpg?size=958x1280&quality=96&sign=a6dabe181e423dbe1028f25412487508&type=album"
-                                }
-                            },
-                            {
-                                title: "Разъездные машины",
-                                description: "Наш автопарк разъездных машин более 10-единиц. Есть автомобили бизнес класса и эконом.",
-                                media: {
-                                    type: '',
-                                    url: ''
-                                }
-                            }
-                        ]
+                        title: "Подберём локации",
+                        description: "Мы всегда в поиске уникальных мест на территории Ростова, Ростовской области. Поможем вам найти именно то место, которое вы хотите: Предоставим список локаций в Ростовской области, под ваши запросы организуем поиск и подготовку необходимых локаций и устроим административное сопровождение съемок.",
+                        media: {
+                            type: 'image',
+                            url: "https://images.unsplash.com/photo-1495562569060-2eec283d3391?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        }
                     },
                     {
-                        title: "Аутсорсинг",
-                        cards: [
-                            {
-                                title: "Аутсорсинг",
-                                description: "Аутсорсинг — передача организацией на основании договора определённых видов или функций производственной предпринимательской деятельности другой компании, действующей в нужной области.",
-                                media: {
-                                    type: 'image',
-                                    url: "https://images.unsplash.com/photo-1559523182-a284c3fb7cff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        title: "Организации проживания и питания",
-                        cards: [
-                            {
-                                title: "Организации проживания и питания",
-                                description: "Актёров накормят и заселят, согласно их райдерам",
-                                media: {
-                                    type: 'image',
-                                    url: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        title: "Аренда костюмов и реквизита",
-                        cards: [
-                            {
-                                title: "Аренда костюмов и реквизита",
-                                description: "Предоставим костюмы и реквизиты",
-                                media: {
-                                    type: 'image',
-                                    url: "https://www.mosfilm.ru/upload/iblock/fb2/fb21d8da554c53a67bddb4967e132d4d.jpg"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        title: "Аренда хоз. инвентаря",
-                        cards: [
-                            {
-                                title: "Рации",
-                                description: "Когда команда фильма вынуждена покидать павильоны, чтобы отснять сцены на природе, вдали от крупных населённых пунктов, мобильные телефоны оказываются бесполезны, уступая место традиционным симплексным радиостанциям.",
-                                media: {
-                                    type: 'image',
-                                    url: "https://баофенг.рф/image/cache/catalog/image/cache/catalog/Tovary/Baofeng/2019/baofeng_uv-5r_colors-min-800x800.webp"
-                                }
-                            },
-                            {
-                                title: "Палатки",
-                                description: "Предоставитм палатки",
-                                media: {
-                                    type: 'image',
-                                    url: "https://img.promportal.su/foto/good_fotos/46844/468442539/kino-palatka-3h3_foto_largest.jpg"
-                                }
-                            },
-                            {
-                                title: "Столы, стулья",
-                                description: "Предоставим столы и стулья",
-                                media: {
-                                    type: 'image',
-                                    url: "https://shalash.by/foldsets/images/products/78/stol-skladnoj-beseda-o150sm01.jpg"
-                                }
-                            },
-                            {
-                                title: "Прочее",
-                                description: "Найдём всё что вам нужно",
-                                media: {
-                                    type: 'image',
-                                    url: "https://yt3.ggpht.com/ytc/AKedOLRfDmdb38qoIQWFY-S16_JtJk2CkZHG98Bjdhk6Sw=s900-c-k-c0x00ffffff-no-rj"
-                                }
-                            }
-                        ]
+                        title: "Организуем съёмки",
+                        description: "Организуем для съемочной группы, весь сопутствующий сервис, связанный с проездом, проживанием и обеспечением всего необходимого на съемочной площадке: Предоставим легковой, грузовой транспорт, автобусы, спец.транспорт ( костюмваген, гримваген, актерские вагоны, камерваген, скайлифт и другой необходимый транспорт), сдадим в аренду оборудование (свет, кинокамеры и другое), организуем питание на съемочной площадке, наладим контакты с региональными властями и администрацией, СМИ, ТВ и Радио, обеспечим безопасность на съемочной площадке (Полиция, МЧС и другие), организуем кастинг, подбор актеров, статистов, своя база актеров массовых сцен",
+                        media: {
+                            type: 'image',
+                            url: "https://images.unsplash.com/photo-1605501492805-f5699f0718d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        }
                     }
-
                 ]
             }
         }
         this.projects = {
             title: "Проекты",
+            titleBig: "Проекты",
             content: {
                 films: [
                     {
@@ -165,7 +63,7 @@ export class ModelService {
                         description: "Бывший боксёр Егор Таранцев приезжает в родной приморский городок на похороны матери. Двадцать лет назад он уехал на соревнования и больше не возвращался в эти края. Карьера пошла на взлёт, из любителей он вышел в профессионалы, бился за чемпионский титул в Лас-Вегасе, всё на ринге складывалось удачно, пока однажды врачи не выдали Егору приговор, - если он не остановится, то последствия могут быть непоправимы, — от инсульта до смерти.",
                         media: {
                             type: 'image',
-                            url: "https://a.kinoblogi.ru/2021/01/31/mirserialov16180128687470.jpg"
+                            url: "https://resizer.mail.ru/p/c2cd1f74-30a1-5e7f-8115-f5e6b6b653f9/dpr:200/AAACriqzuLWp0iTKEwB8BchTFCM98rpffYY8VESL5zpv3nlXQjMRZLrp1p37zn4DT0E76wskMINK7w-EZTZmrpcDxEM.jpg"
                         }
                     },
                     {
@@ -173,7 +71,7 @@ export class ModelService {
                         description: "Что тебе остается делать, когда в детстве, в результате несчастного случая погибает вся твоя семья, а ты оказываешься в детском доме? Что тебе остается делать, если твоей единственной любовью становится человек, спасший тебя от неминуемой смерти и забывший потом тебя? Что тебе остается делить, если появившийся, чудом выживший родной брат оказывается настоящим преступником? Жизненные испытания, выпавшие на долю главной героини Кати Марковой - не из легких. Только вознаградятся ли потом они заслуженным счастьем, спокойствием и взаимной любовью?",
                         media: {
                             type: 'video',
-                            url: "https://www.youtube.com/watch?v=bLDg6HeiU2s&ab_channel=KinoafishA"
+                            url: "https://www.youtube.com/watch?v=xB4p1spSsIc"
                         }
                     },
                     {
@@ -181,7 +79,7 @@ export class ModelService {
                         description: "Сагар очень любит свою красавицу жену Пурнилу. В их доме царит счастье. Все меняется в один день. Старшая сестра Пурнилы была тяжело больна, но наступает улучшение и ее выписывают из больницы домой. К несчастью, эта женщина не только сестра Пурнилы, она еще и первая жена Сагары...",
                         media: {
                             type: 'video',
-                            url: "https://www.youtube.com/watch?v=xhdyyuU0eeM&ab_channel=CreatorInsider"
+                            url: "https://www.youtube.com/watch?time_continue=7&v=0Jp2IkJnZec&feature=emb_logo&ab_channel=%D0%9A%D0%B8%D0%BD%D0%BE%D0%B0%D1%84%D0%B8%D1%88%D0%B0VS"
                         }
                     },
                     {
@@ -221,35 +119,37 @@ export class ModelService {
                         description: "Российский драматический сериал о восстании декабристов. Они уверены, что справедливость и свобода наступят здесь и сейчас. И ради этого многие готовы пожертвовать не только любовью, но и жизнью.",
                         media: {
                             type: 'image',
-                            url: "https://s1.stc.all.kpcdn.net/putevoditel/serialy/wp-content/uploads/2020/08/187051-1-467x697.jpg"
+                            url: "https://s14.stc.yc.kpcdn.net/share/i/12/12038523/de-1200x900.jpg"
                         }
                     }
                 ]
             }
         }
         this.partners = {
-            title: "Наши партнёры",
+            title: "Партнёры",
+            titleBig: "Наши партнёры",
             content: {
                 partners: [
                     {
-                        name: "LookFilm",
-                        logomedia: {
+                        name: "Продюсерский центр браво",
+                        media: {
                             type: 'image',
-                            url: ""
+                            url: "../../../assets/partners/bravo.png"
                         }
                     },
                     {
-                        name: "Продюсерский центр браво",
-                        logomedia: {
+                        name: "LookFilm",
+                        media: {
                             type: 'image',
-                            url: ""
+                            url: "../../../assets/partners/lookfilm.png"
                         }
                     },
+
                     {
                         name: "ИП Мосин М.Н.",
-                        logomedia: {
+                        media: {
                             type: 'image',
-                            url: ""
+                            url: "../../../assets/partners/mosin.png"
                         }
                     }
                 ]
@@ -257,6 +157,7 @@ export class ModelService {
         }
         this.contacts = {
             title: "Контакты",
+            titleBig: "Свяжитесь с нами",
             content: {
                 phones: {
                     title: "Телефон",
@@ -286,31 +187,9 @@ export class ModelService {
 }
 interface Block {
     title: string;
+    titleBig: string;
     content: any;
 }
-
-// export interface About {
-//     companyName: string;
-//     about: Card;
-//     callToAction: Card;
-// }
-export interface Services {
-    title: string;
-    categories: Category[];
-}
-// export interface Projects {
-//     title: string;
-//     films: Card[];
-// }
-// export interface Partners {
-//     title: string;
-//     partners: Partner[];
-// }
-// export interface Contacts {
-//     title: string;
-//     contactTypes: ContactType[];
-// }
-
 export interface Card {
     title: string;
     description: string;
@@ -320,15 +199,3 @@ export interface Media {
     type: string;
     url: string;
 }
-interface Category {
-    title: string;
-    cards: Card[];
-}
-// interface Partner {
-//     name: string;
-//     logomedia:{} string;
-// }
-// interface ContactType {
-//     title: string;
-//     contacts: string[];
-// }

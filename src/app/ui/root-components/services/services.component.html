@@ -1,6 +1,8 @@
 <div class="widthControlContainer border">
     <div class="widthControl">
-        <app-headline [header]="services.title"></app-headline>
-        <app-tabs [services]="services.content"></app-tabs>
+        <app-headline [header]="services.titleBig"></app-headline>
+        <div class="border">
+            <app-slider [cards]="services.content.services"></app-slider>
+        </div>
     </div>
 </div>

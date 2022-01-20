@@ -7,10 +7,9 @@
 
 .logo {
     margin: 1em;
-    height: 2.5em;
+    height: 1.6em;
     flex-shrink: 0;
 }
-
 
 
 svg {
@@ -27,7 +26,7 @@ svg {
 .notBurger{
     display: flex;
 }
-@media (max-width: 800px){
+@media (max-width: 960px){
     .burger{
         display: flex;
     }
