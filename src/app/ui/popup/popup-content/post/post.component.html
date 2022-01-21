@@ -1,7 +1,6 @@
-<div class="image border">
+<div class="image">
     <div class="imageContainer">
-        <img *ngIf="media.type === 'image' && media.url" src="{{media.url}}">
-        <img *ngIf="media.type === 'image' && !media.url" src="../../../assets/noImage.png">
+        <app-image *ngIf="media.type === 'image'" [imagePath]="media.url"></app-image>
     </div>
 
     <div class="videoContainer" [ngStyle]="{'padding-bottom': aspectRatio }">

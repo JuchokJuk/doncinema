@@ -1,54 +1,11 @@
-@font-face {
-    font-family: NueMachina;
-    src: url("assets/neueMachina/NeueMachina-Light.otf") format("opentype");
-    font-weight: light;
-}
-
-@font-face {
-    font-family: NueMachina;
-    src: url("assets/neueMachina/NeueMachina-Regular.otf") format("opentype");
-    font-weight: regular;
-}
-
-@font-face {
-    font-family: NueMachina;
-    src: url("assets/neueMachina/NeueMachina-Ultrabold.otf") format("opentype");
-    font-weight: bold;
-}
-
 :root {
-    --main-color: #2C2C2C;
-    --main-color-transparent: #2c2c2cb0;
+    --main-color: #1C1B1F;
+    --main-color-transparent: #1C1B1Fb0;
 
     --main-low-contrast-color: #0000001a;
     --main-medium-contrast-color: #00000033;
     --main-contrast-color: #ffffffcc;
     --main-contrast-color-transparent: #ffffff80;
-
-    --accent-color: #106EBE;
-    --accent-coplementary-color: #be1075;
-
-    --accent-color-transparent: #106EBE80;
-    --accent-coplementary-color-transparent: #be107580;
-
-    --noise: url(./assets/blackNoise5.png);
-
-    /* duotone */
-    --base: var(--accent-color);
-    --bg-blend: multiply;
-    --fg-blend: lighten;
-    --foreground: #460029;
-
-
-    --shadow: 0px 4px 8px 0px #00000033;/*33*/
-    --light: inset 0 1.5px 0 0 #ffffff33; /*33*/
-    --glow: 0px 4px 16px 0px #106EBE80;
-    --hover-outline: 0 0 0 4px #106EBE40;
-    --focus-outline: 0 0 0 4px #106EBE80;
-
-    --main-lighten-transparent-color: #3a3a3a;
-
-    --border-radius: 0.5em;
 
     --shadow: 0px 2px 6px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.3);
 }
@@ -58,6 +15,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 
 html,
 body {
@@ -98,12 +56,7 @@ h4 {
 }
 
 .material {
-    background: var(--main-color-transparent);
-    backdrop-filter: blur(4em);
-
-
-
-
+    background: var(--main-color);
 }
 
 .row {

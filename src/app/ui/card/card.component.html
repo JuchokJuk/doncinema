@@ -2,9 +2,9 @@
 
 
     <div class="imageContainer">
-        <img *ngIf="media.type === 'image' && media.url" src="{{media.url}}">
-        <img *ngIf="media.type === 'video' && media.url" src="../../../assets/noImage.png">
-        <img *ngIf="media.type === 'image' && !media.url" src="../../../assets/noImage.png">
+        <app-image *ngIf="media.type === 'image'" [imagePath]="media.url" [cover]="true"></app-image>
+        <app-image *ngIf="media.type === 'video'" [imagePath]="preview" [cover]="true"></app-image>
+        <!-- <img *ngIf="media.type === 'image' && !media.url" src="../../../assets/images/noImage.png"> -->
     </div>
 
 

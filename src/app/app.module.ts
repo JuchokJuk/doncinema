@@ -6,7 +6,6 @@ import { SwiperModule } from 'swiper/angular';
 import { MenuComponent } from './ui/root-components/menu/menu.component';
 import { HeaderComponent } from './ui/root-components/header/header.component';
 import { BlockComponent } from './ui/block/block.component';
-import { OrbsComponent } from './ui/orbs/orbs.component';
 import { ServicesComponent } from './ui/root-components/services/services.component';
 import { HeadlineComponent } from './ui/headline/headline.component';
 import { SliderComponent } from './ui/slider/slider.component';
@@ -14,7 +13,6 @@ import { ProjectsComponent } from './ui/root-components/projects/projects.compon
 import { PartnersComponent } from './ui/root-components/partners/partners.component';
 import { ContactsComponent } from './ui/root-components/contacts/contacts.component';
 import { FooterComponent } from './ui/footer/footer.component';
-import { PartnerCardComponent } from './ui/partner-card/partner-card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { CardComponent } from './ui/card/card.component';
@@ -23,6 +21,8 @@ import { PostComponent } from './ui/popup/popup-content/post/post.component';
 import { CallFormComponent } from './ui/popup/popup-content/call-form/call-form.component';
 
 import { ButtonComponent } from './ui/button/button.component';
+import { ImageComponent } from './ui/image/image.component';
+import { NoImageComponent } from './ui/no-image/no-image.component';
 
 
 @NgModule({
@@ -31,7 +31,6 @@ import { ButtonComponent } from './ui/button/button.component';
     MenuComponent,
     HeaderComponent,
     BlockComponent,
-    OrbsComponent,
     ServicesComponent,
     HeadlineComponent,
     SliderComponent,
@@ -39,12 +38,13 @@ import { ButtonComponent } from './ui/button/button.component';
     PartnersComponent,
     ContactsComponent,
     FooterComponent,
-    PartnerCardComponent,
     CardComponent,
     PopupComponent,
     PostComponent,
     CallFormComponent,
     ButtonComponent,
+    ImageComponent,
+    NoImageComponent,
   ],
   imports: [
     BrowserModule,

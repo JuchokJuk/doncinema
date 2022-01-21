@@ -1,0 +1,5 @@
+<div class="image" [ngClass]="{'cover' : cover}">
+    <img *ngIf="!cover && imagePath" class="back" src="{{imagePath}}">
+    <img *ngIf="imagePath" src="{{imagePath}}">
+    <app-no-image *ngIf="!imagePath"></app-no-image>
+</div>

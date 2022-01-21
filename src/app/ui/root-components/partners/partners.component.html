@@ -1,9 +1,12 @@
 <div class="widthControlContainer">
     <div class="widthControl">
         <app-headline [header]="partners.titleBig"></app-headline>
-        <div class="adaptiveParent">
-            <app-partner-card *ngFor="let partner of partners.content.partners" class="adaptiveChild" [imagePath]="partner.media.url">
-            </app-partner-card>
+        <div class="partnersContainer">
+
+            
+                <img *ngFor="let partner of partners.content.partners" src="{{partner.media.url}}">
+            
+            
         </div>
     </div>
 </div>

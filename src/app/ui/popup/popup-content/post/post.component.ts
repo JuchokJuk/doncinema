@@ -33,7 +33,7 @@ export class PostComponent {
 
     const youtubeAnswer = await response.json();
 
-    return youtubeAnswer.thumbnail_height / youtubeAnswer.thumbnail_width;
+    return youtubeAnswer.height / youtubeAnswer.width;
 
   }
   youTubeGetID(url: string): string {

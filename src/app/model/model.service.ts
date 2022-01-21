@@ -18,7 +18,7 @@ export class ModelService {
             content: {
                 companyName: 'Кинокомпания Дон Синема',
                 header: 'Организуем съемки фильма в Ростове-на-Дону',
-                image: 'https://images.unsplash.com/photo-1534684686641-05569203ecca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80',
+                image: 'https://images.unsplash.com/photo-1515634928627-2a4e0dae3ddf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
                 chips: [
                     { icon: 'home', text: 'проживание и питание' },
                     { icon: 'directions_car', text: 'транспорт' },
@@ -103,7 +103,7 @@ export class ModelService {
                         description: "Пока что сериал в производстве",
                         media: {
                             type: 'image',
-                            url: "https://mf-static-ssl.more.tv/jackal/2561793/f19923c9-47fd-4f29-a6f4-ccb92142c8a4_W375_H532.jpg"
+                            url: "https://www.film.ru/sites/default/files/movies/frames/41967446-1067077.jpg"
                         }
                     },
                     {
@@ -134,14 +134,14 @@ export class ModelService {
                         name: "Продюсерский центр браво",
                         media: {
                             type: 'image',
-                            url: "../../../assets/partners/bravo.png"
+                            url: "../../../assets/images/partners/bravo.png"
                         }
                     },
                     {
                         name: "LookFilm",
                         media: {
                             type: 'image',
-                            url: "../../../assets/partners/lookfilm.png"
+                            url: "../../../assets/images/partners/lookfilm.png"
                         }
                     },
 
@@ -149,7 +149,7 @@ export class ModelService {
                         name: "ИП Мосин М.Н.",
                         media: {
                             type: 'image',
-                            url: "../../../assets/partners/mosin.png"
+                            url: "../../../assets/images/partners/mosin.png"
                         }
                     }
                 ]

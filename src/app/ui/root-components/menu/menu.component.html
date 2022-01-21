@@ -31,12 +31,9 @@
 
         </div>
     </div>
-    <div class="widthControlContainer shadow">
-        <div class="widthControl">
-            <div class="burgerMenu column " [ngClass]="{'opened': menuIsOpened}">
+    <div class="shadow">
+            <div class="burgerMenu column" [ngClass]="{'opened': menuIsOpened}">
                 <app-button *ngFor="let block of blocks" (click)="scrollTo(block.element)">{{block.title}}</app-button>
-
             </div>
-        </div>
     </div>
 </div>

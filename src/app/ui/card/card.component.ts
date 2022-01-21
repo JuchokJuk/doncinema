@@ -16,6 +16,8 @@ export class CardComponent {
   @Input() header!: string;
   @Input() text!: string;
 
+  preview: string = "";
+
   showPopup() {
     const inputs = [
       {
