@@ -19,7 +19,7 @@
             </svg>
             <div class="row alignCenter">
                 <div class="notBurger row alignCenter">
-                    <app-button *ngFor="let block of blocks" (click)="scrollTo(block.element)">{{block.title}}
+                    <app-button *ngFor="let block of blocks" (click)="scrollTo(block.element)">{{block.short_name_for_menu}}
                     </app-button>
                 </div>
 
@@ -33,7 +33,7 @@
     </div>
     <div class="shadow">
             <div class="burgerMenu column" [ngClass]="{'opened': menuIsOpened}">
-                <app-button *ngFor="let block of blocks" (click)="scrollTo(block.element)">{{block.title}}</app-button>
+                <app-button *ngFor="let block of blocks" (click)="scrollTo(block.element)">{{block.short_name_for_menu}}</app-button>
             </div>
     </div>
 </div>

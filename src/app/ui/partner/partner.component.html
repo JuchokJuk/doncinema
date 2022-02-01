@@ -1,0 +1,4 @@
+<img *ngIf="logo;else nameTemplate" [src]="( logo | imageUrl ) | safe: 'url'">
+<ng-template #nameTemplate>
+    <span>{{name}}</span>
+</ng-template>

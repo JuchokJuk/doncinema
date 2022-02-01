@@ -34,10 +34,14 @@
 
     position: relative;
     border-radius: 1em;
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
-@media (max-width: 960px) {
+@media (max-width: 640px) {
     .popup {
+        min-height: 100vh;
         border-radius: 0;
+        margin: 0;
     }
     .widthControl{
         padding: 0;

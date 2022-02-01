@@ -11,18 +11,26 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     box-sizing: border-box;
 }
 
 
 html,
 body {
+    margin: 0;
+    padding: 0;
     width: 100%;
-    /*menu backdrop blu fix*/
-    height: 0;
+
     background: var(--main-color);
+
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+figure{
+    margin-left: 0;
+    margin-right: 0;
 }
 
 body {
@@ -32,7 +40,8 @@ body {
 }
 
 h1, h2, h3, h4 {
-
+    margin: 0;
+    padding: 0;
     /* font-family: 'NueMachina'; */
     color: var(--main-contrast-color);
 }
@@ -111,12 +120,15 @@ h4 {
     max-width: 1232px;
     padding: 0 2.5em;
 }
-
+.oneColumn {
+    max-width: 640px;
+}
 @media (max-width: 960px) {
     .widthControl {
         padding: 0 1.5em;
     }
 }
+
 
 .adaptiveParent {
     display: flex;
@@ -182,4 +194,5 @@ input:focus {
 
 a{
     color: var(--main-contrast-color-transparent);
+    text-decoration: none;
 }

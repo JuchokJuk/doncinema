@@ -1,8 +1,15 @@
-<div class="widthControlContainer border">
-    <div class="widthControl">
-        <app-headline [header]="projects.titleBig"></app-headline>
-        <div class="border">
-            <app-slider [cards]="projects.content.films"></app-slider>
+<div #ref>
+
+    <div *ngIf="projects" class="widthControlContainer border">
+        <div class="widthControl">
+            <app-headline [header]="projects.header"></app-headline>
+
+            <div class="grid">
+                <app-card *ngFor="let card of cards" [cover]="card.cover.data ? card.cover.data.attributes.url : undefined" [header]="card.header" [content]="card.content">
+                </app-card>
+            </div>
+
         </div>
     </div>
+    
 </div>

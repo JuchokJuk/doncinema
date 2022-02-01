@@ -1,18 +1,14 @@
-<div class="card" (click)="showPopup()" >
+<div class="card" (click)="showPopup()">
 
 
     <div class="imageContainer">
-        <app-image *ngIf="media.type === 'image'" [imagePath]="media.url" [cover]="true"></app-image>
-        <app-image *ngIf="media.type === 'video'" [imagePath]="preview" [cover]="true"></app-image>
-        <!-- <img *ngIf="media.type === 'image' && !media.url" src="../../../assets/images/noImage.png"> -->
+        <app-image [imagePath]="cover" [cover]="true"></app-image>
     </div>
 
 
     <div class="text">
-        <div class="header">
-            <h2>{{header}}</h2>
-        </div>
-        <p>{{text}}</p>
+        <h2>{{header}}</h2>
+        <p>{{contentPreview}}</p>
     </div>
 
 </div>

@@ -1,0 +1,33 @@
+<div #ref>
+
+    <div *ngIf="about" class="widthControlContainer border menuMargin">
+        <div class="widthControl">
+            
+            <div class="grid menuMargin">
+    
+                <div class="text">
+                    <div class="caption"><span>{{about.content[0].company_name}}</span></div>
+                    <div class="header">
+                        <h1>{{about.header}}</h1>
+                    </div>
+                    <div class="chips">
+                        <div class="chip" *ngFor="let chip of about.content[0].chips.data">
+                            <div class="alignCenter">
+                                <mat-icon>{{chip.attributes.icon_name}}</mat-icon>
+                            </div>
+                            <span>{{chip.attributes.text}}</span>
+                        </div>
+                    </div>
+                </div>
+    
+    
+    
+                <div class="imageContainer">
+                    <img [src]="( about.content[0].image.data.attributes.url | imageUrl ) | safe: 'url'">
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+</div>

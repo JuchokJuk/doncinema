@@ -1,26 +1,14 @@
 <div class="image">
-    <div class="imageContainer">
-        <app-image *ngIf="media.type === 'image'" [imagePath]="media.url"></app-image>
+    <div class="imageContainer" *ngIf="cover">
+        <app-image [imagePath]="cover"></app-image>
     </div>
-
-    <div class="videoContainer" [ngStyle]="{'padding-bottom': aspectRatio }">
-        <iframe *ngIf="media.type === 'video'" [src]="safeEmbededUrl" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
 </div>
 
 <div class="content column">
 
-
-
-
-
     <div class="text column">
-        <div class="header">
-            <h2>{{header}}</h2>
-        </div>
-        <p>{{text}}</p>
+        <h2>{{header}}</h2>
+        <div [innerHTML]="content | safe: 'html'"></div>
     </div>
 
 </div>

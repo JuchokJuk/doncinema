@@ -1,9 +1,12 @@
-::ng-deep .tabsContainer .swiperContainer{
-    height: 100%;
+.grid {
+    display: grid;
+    grid-gap: 6em 4em;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, minmax(0%, 50%));
 }
-.tab{
-    height: 100%;
-}
-::ng-deep .tabsContainer .swiper{
-    height: 100%;
+
+@media (max-width: 960px) {
+    .grid {
+        grid-template-columns: repeat(1, minmax(0%, 100%));
+    }
 }

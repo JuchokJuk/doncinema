@@ -1,12 +1,17 @@
-<div class="widthControlContainer">
-    <div class="widthControl">
-        <app-headline [header]="partners.titleBig"></app-headline>
-        <div class="partnersContainer">
+<div #ref>
 
-            
-                <img *ngFor="let partner of partners.content.partners" src="{{partner.media.url}}">
-            
-            
+    <div *ngIf="partners" class="widthControlContainer">
+        <div class="widthControl">
+            <app-headline [header]="partners.header"></app-headline>
+            <div class="partnersContainer">
+
+
+                <app-partner *ngFor="let logotype of partnerLogotypes" [logo]="logotype.logo.data ? logotype.logo.data.attributes.url : undefined" [name]="logotype.name">
+                </app-partner>
+
+
+            </div>
         </div>
     </div>
+
 </div>

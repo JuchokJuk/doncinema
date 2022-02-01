@@ -1,5 +1,4 @@
 import { Component, Input} from '@angular/core';
-import { SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-image',
@@ -8,8 +7,5 @@ import { SafeResourceUrl } from '@angular/platform-browser';
 })
 export class ImageComponent{
   @Input() cover:boolean = false;
-  @Input() imagePath!: SafeResourceUrl;
-  ngAfterViewInit(){
-    console.log(this.imagePath)
-  }
+  @Input() imagePath!: string;
 }
