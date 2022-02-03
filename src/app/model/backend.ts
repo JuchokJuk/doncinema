@@ -1,5 +1,5 @@
 export class Backend {
-    backendDomain: string = 'http://localhost:1337'
+    backendDomain: string = 'https://doncinema.herokuapp.com'
 
     async getTypeAttributes(type: string, populate: string): Promise<any> {
         const url = `${this.backendDomain}/api/${type}?populate=${populate}`;
