@@ -7,6 +7,7 @@ import { Backend } from './backend';
 export class ImageUrlPipe implements PipeTransform {
   backend:Backend = new Backend();
   transform(value: string): string {
-    return this.backend.backendDomain + value;
+    // return this.backend.backendDomain + value;
+    return value;
   }
 }
